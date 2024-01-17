@@ -16,7 +16,7 @@ const date = new Date();
 date.setDate
 
 // Auto populate current date and time
-inc_date.value = `${date.getFullYear()}-${("0" + date.getMonth()).slice(-2)}-${("0" + date.getDate()).slice(-2)}`;
+inc_date.valueAsDate = `${date.getFullYear()}-${("0" + date.getMonth()).slice(-2)}-${("0" + date.getDate()).slice(-2)}`;
 inc_time.value = date.toLocaleTimeString();
 
 
