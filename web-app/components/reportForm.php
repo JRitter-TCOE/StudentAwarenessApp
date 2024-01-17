@@ -1,12 +1,12 @@
 <h1>First Responder<br>HOSWC Notification</h1>
 <form id='report_form'>
-  <label for='inc_date'>INCIDENT DATE (MM/DD/YYYY):</label>
+  <label for='inc_date'>DATE OF INCIDENT (MM/DD/YYYY):</label>
   <input id='inc_date' name='inc_date' type='date'>
 
-  <label>INCIDENT TIME:</label>
+  <label>TIME OF INCIDENT:</label>
   <input id='inc_time' name='inc_time'>
 
-  <label for='agency'>REFERRING AGENCY:</label>
+  <label for='agency'>AGENCY REFERRED BY:</label>
   <?php 
   echo "<input id='agency' name='agency' value='".$_SESSION['username']."'>";
   ?>
