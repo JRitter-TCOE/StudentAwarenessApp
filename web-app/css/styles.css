@@ -114,6 +114,11 @@ label[for='school'] {
   outline: none;
 }
 
+#logo {
+  width: 128px;
+  height: 128px;
+  border-radius: 15px;
+}
 
 p {
   text-align: center;

@@ -5,7 +5,7 @@ session_destroy();
 
 <html>
   <head>
-    <title>HOWSC Login</title>
+    <title>HOSWC Login</title>
     <link rel="stylesheet" href="./css/styles.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
@@ -15,7 +15,7 @@ session_destroy();
     <img id="bg_img" src="https://academicresourcecenter.harvard.edu/sites/projects.iq.harvard.edu/files/styles/os_files_xxlarge/public/academicresourcecenter/files/marvin-meyer-syto3xs06fu-unsplash.jpg?m=1616174363&itok=YXfi-SeO">
 
     <div id="banner">
-      <img src="https://focus.tcoek12.org/images/focus-logo.png">
+      <img id="logo" src="./images/logo.png">
       <form id='login_form'>
         <input class="login_input" id='username' name='username' placeholder='Username'>
         <input class="login_input" id='password' name='password' type="password" placeholder="Password">
