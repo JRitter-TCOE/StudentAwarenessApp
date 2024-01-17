@@ -12,7 +12,7 @@ session_destroy();
   </head>
   <body>
 
-    <img id="bg_img" src="https://academicresourcecenter.harvard.edu/sites/projects.iq.harvard.edu/files/styles/os_files_xxlarge/public/academicresourcecenter/files/marvin-meyer-syto3xs06fu-unsplash.jpg?m=1616174363&itok=YXfi-SeO">
+    <img id="bg_img" src="./images/Background_1">
 
     <div id="banner">
       <img id="logo" src="./images/logo.png">
