@@ -12,7 +12,7 @@ session_destroy();
   </head>
   <body>
 
-    <img id="bg_img" src="./images/Background_1">
+    <img id="bg_img" src="./images/Background_1.jpg">
 
     <div id="banner">
       <img id="logo" src="./images/logo.png">
