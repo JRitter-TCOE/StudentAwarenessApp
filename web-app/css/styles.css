@@ -110,6 +110,10 @@ label[for='school'] {
   margin-top: 32px;
 }
 
+.login_input::placeholder {
+  color: lightgray;
+}
+
 .login_input:focus {
   outline: none;
 }
