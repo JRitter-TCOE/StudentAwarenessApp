@@ -12,7 +12,7 @@ session_start();
   <body>
 
     
-    <img id="bg_img" src="https://iteach.net/wp-content/uploads/new-teacher-classroom-setup.jpg">
+    <img id="bg_img" src="../images/Background_3.jpg">
 
     <div id='container'>
       <?php 
