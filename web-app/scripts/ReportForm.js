@@ -16,7 +16,7 @@ const date = new Date();
 date.setDate
 
 // Auto populate current date and time
-inc_date.valueAsDate = date;
+inc_date.value = "2024-01-23";
 inc_time.value = date.toLocaleTimeString();
 
 
