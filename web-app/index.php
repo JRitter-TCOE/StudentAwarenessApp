@@ -15,7 +15,16 @@ session_destroy();
     <img id="bg_img" src="./images/Background_1.jpg">
 
     <?php 
-      echo "<p>This is a test</p>";
+      $file = fopen('./location.json', 'r');
+      $text = fread($file, filesize('./location.json'));
+      fclose($file);
+
+
+      $user = $text[0];
+      $pass = $text[1];
+
+      echo "<p>$user</p>";
+      echo "<p>$pass</p>";
     ?>
 
     <div id="banner">
