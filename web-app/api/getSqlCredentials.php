@@ -6,4 +6,7 @@
       $lines = explode("\n", $text);
       $user = $lines[0];
       $pass = $lines[1];
+
+      echo "<p>$user</p>";
+      echo "<p>$pass</p>";
 ?>
