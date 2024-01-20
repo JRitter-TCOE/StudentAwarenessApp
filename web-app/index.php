@@ -14,6 +14,10 @@ session_destroy();
 
     <img id="bg_img" src="./images/Background_1.jpg">
 
+    <?php 
+      echo "<p>This is a test</p>";
+    ?>
+
     <div id="banner">
       <img id="logo" src="./images/logo.png">
       <form id='login_form'>
