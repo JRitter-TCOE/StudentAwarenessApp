@@ -1,6 +1,6 @@
 <?php 
-      $file = fopen('../credentials.txt', 'r');
-      $text = fread($file, filesize('../credentials.txt'));
+      $file = fopen('./credentials.txt', 'r');
+      $text = fread($file, filesize('./credentials.txt'));
       fclose($file);
 
       $lines = explode("\n", $text);
