@@ -14,19 +14,7 @@ session_destroy();
 
     <img id="bg_img" src="./images/Background_1.jpg">
 
-    <?php 
-      $file = fopen('./credentials.txt', 'r');
-      $text = fread($file, filesize('./credentials.txt'));
-      fclose($file);
-
-      $lines = explode("\n", $text);
-      $user = $lines[0];
-      $pass = $lines[1];
-
-      echo "<p>$text</p>";
-      echo "<p>$user</p>";
-      echo "<p>$pass</p>";
-    ?>
+    
 
     <div id="banner">
       <img id="logo" src="./images/logo.png">
