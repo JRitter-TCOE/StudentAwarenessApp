@@ -1,5 +1,5 @@
 <?php 
-      $file = fopen('./credentials.txt', 'r');
+      $file = fopen('../credentials.txt', 'r');
       $text = fread($file, filesize('./credentials.txt'));
       fclose($file);
 
