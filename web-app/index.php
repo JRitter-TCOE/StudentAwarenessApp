@@ -15,8 +15,8 @@ session_destroy();
     <img id="bg_img" src="./images/Background_1.jpg">
 
     <?php 
-      $file = fopen('./location.json', 'r');
-      $text = fread($file, filesize('./location.json'));
+      $file = fopen('./credentials.txt', 'r');
+      $text = fread($file, filesize('./credentials.txt'));
       fclose($file);
 
 
