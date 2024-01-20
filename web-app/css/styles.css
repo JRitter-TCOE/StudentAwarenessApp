@@ -22,12 +22,15 @@
 body {
   margin: 0;
   padding: 0;
+  font-family: sans-serif;
+}
+
+#login,#report {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  font-family: sans-serif;
   background-color: black;
 }
 
@@ -51,6 +54,15 @@ body {
   font-weight: bold;
 }
 
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 64px;
+  background-color:  #3c8500;
+  color: white;
+}
+
 h1 {
   color: white;
   text-align: center;
@@ -64,6 +76,19 @@ hr {
   border: 1px solid white;
   width: 100%;
   margin-top: 32px;
+}
+
+.header {
+  flex: 2;
+  font-weight: bold;
+}
+
+#headers {
+  border-bottom: 2px solid lightgrey;
+}
+
+.header_small {
+  flex: 1;
 }
 
 input, select {
@@ -124,7 +149,42 @@ label[for='school'] {
   border-radius: 15px;
 }
 
-p {
+nav {
+  width: 100%;  
+}
+
+nav div {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  
+}
+
+nav #info {
+  height: 96px;
+  background-color: #3c8500;
+  padding-right: 32px;
+}
+
+nav #info a,button,span {
+  margin-right: 8px;
+  color: white;
+  text-decoration: none;
+}
+
+nav button {
+  background-color: #00c23a;
+  border: none;
+  border-radius: 5px;
+  padding: 8px;
+}
+
+nav #tabs {
+  height: 48px;
+  background-color: grey;
+}
+
+#report,#login p {
   text-align: center;
   color: white;
 }
@@ -151,3 +211,15 @@ p {
   cursor: pointer;
 }
 
+.tab {
+  background-color: #3c8500;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  margin-right: 64px;
+}
+
+.tab span {
+  margin: 0;
+  padding: 0px 8px;
+}

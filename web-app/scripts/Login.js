@@ -22,7 +22,7 @@ login.onsubmit = async (e) => {
     const res = await post('../api/login.php', params);
   
     if (res == "SUCCESS") {
-      window.location.href = './pages/report.php';
+      window.location.href = './pages/school.php';
     }
     else {
       login_feedback.innerText = "Invalid Credentials";
