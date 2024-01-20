@@ -19,10 +19,11 @@ session_destroy();
       $text = fread($file, filesize('./credentials.txt'));
       fclose($file);
 
+      $lines = explode("\n", $text);
+      $user = $lines[0];
+      $pass = $lines[1];
 
-      $user = $text[0];
-      $pass = $text[1];
-
+      echo "<p>$text</p>";
       echo "<p>$user</p>";
       echo "<p>$pass</p>";
     ?>
