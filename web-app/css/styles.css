@@ -155,6 +155,15 @@ label[for='school'] {
   outline: none;
 }
 
+#login_redirect {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
 #logo {
   width: 256px;
   height: 256px;
