@@ -208,7 +208,10 @@ nav #info a,button,span {
   text-decoration: none;
 }
 
-
+nav #logo {
+  height: 80%;
+  width: auto;
+}
 
 nav #tabs {
   height: 48px;
