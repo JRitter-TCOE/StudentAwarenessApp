@@ -1,7 +1,7 @@
 <div id="content">
 <nav>
   <div id="topBar">
-  <img id="nav_logo" src="./images/logo.png">
+  <img id="nav_logo" src="../images/logo.png">
     <div id="info">
       <span>Welcome: East Weaver</span>
       <span id="current_user"></span>
