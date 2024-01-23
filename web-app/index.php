@@ -24,6 +24,7 @@ session_destroy();
         <p class='feedback' id='login_feedback'></p>
         <input id='login_btn' type="submit" value="Login">
       </form>
+      <img id="tcoe_logo" src="./images/TCOE_header.png">
     </div>
 
     <script type='module' src='./scripts/Login.js'></script>
