@@ -7,7 +7,7 @@ const case_num = document.getElementById('case_num');
 const child_fname = document.getElementById('child_fname');
 const child_lname = document.getElementById('child_lname');
 const child_dob = document.getElementById('child_dob');
-const school = document.getElementById('school');
+const school = document.getElementById('school_select');
 const feedback = document.getElementById('report_feedback');
 
 

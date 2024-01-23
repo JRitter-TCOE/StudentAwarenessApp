@@ -27,7 +27,7 @@
   <label for='child_dob'>DATE OF BIRTH (MM/DD/YYYY):</label>
   <input id='child_dob' name='child_dob' type='date'>
 
-  <label for='school'>SCHOOL:</label>
+  <label for='school_select'>SCHOOL:</label>
   <?php include('../components/schoolSelect.html') ?>
   
   <hr>
