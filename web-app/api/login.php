@@ -2,14 +2,21 @@
 
 session_start();
 
-$user = 'wpd';
-$pass = 'root';
+$agency_user = 'wpd';
+$agency_pass = 'root';
+
+$school_user = 'EastW';
+$school_pass = 'root';
 
 
-if ($_POST['username'] == $user && $_POST['password'] == $pass) {
+if ($_POST['username'] == $agency_user && $_POST['password'] == $agency_pass) {
   echo json_encode(array("data"=>"SUCCESS"));
   $_SESSION['username'] = $_POST['username'];
 }
+else if ($_POST['username'] == $school_user && $_POST['password'] == $school_pass) {
+    echo json_encode(array("data"=>"SUCCESS"));
+    $_SESSION['username'] = $_POST['username'];
+  }
 else {
   echo json_encode(array("data"=>"FAILURE"));
 }

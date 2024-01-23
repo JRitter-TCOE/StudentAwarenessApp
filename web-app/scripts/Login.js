@@ -21,7 +21,10 @@ login.onsubmit = async (e) => {
       
     const res = await post('../api/login.php', params);
   
-    if (res == "SUCCESS") {
+    if (res == "SUCCESS" && params.username == "wpd") {
+      window.location.href = './pages/report.php';
+    }
+    else if (res == "SUCCESS" && params.username == "EastW") {
       window.location.href = './pages/school.php';
     }
     else {
