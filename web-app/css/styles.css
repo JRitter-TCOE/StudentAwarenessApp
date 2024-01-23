@@ -276,3 +276,8 @@ nav #topBar {
   margin: 0;
   padding: 0px 8px;
 }
+
+#tcoe_logo {
+  width: 256px;
+  height: auto;
+}
