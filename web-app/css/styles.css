@@ -208,7 +208,7 @@ nav #info a,button,span {
   text-decoration: none;
 }
 
-nav #logo {
+#nav_logo {
   height: 80px;
   width: auto;
 }
