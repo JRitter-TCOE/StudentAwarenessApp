@@ -49,9 +49,21 @@ body {
   min-width: 256px;
 }
 
+.entry:nth-child(odd) {
+  background-color: lightgrey;
+}
+
 .feedback {
   color: red;
   font-weight: bold;
+}
+
+.field {
+  flex: 2;
+}
+
+.field_small {
+  flex: 1;
 }
 
 footer {
@@ -149,6 +161,13 @@ label[for='school'] {
   border-radius: 15px;
 }
 
+#logout {
+  background-color: #00c23a;
+  border: none;
+  border-radius: 5px;
+  padding: 8px;
+}
+
 nav {
   width: 100%;  
 }
@@ -172,12 +191,7 @@ nav #info a,button,span {
   text-decoration: none;
 }
 
-nav button {
-  background-color: #00c23a;
-  border: none;
-  border-radius: 5px;
-  padding: 8px;
-}
+
 
 nav #tabs {
   height: 48px;

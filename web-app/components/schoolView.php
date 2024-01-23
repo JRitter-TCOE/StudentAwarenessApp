@@ -1,13 +1,13 @@
 <div id="content">
 <nav>
   <div id="info">
-    <span>Welcome:</span>
+    <span>Welcome: East Weaver</span>
     <span id="current_user"></span>
     <span>|</span>
-    <span>Access:</span>
+    <span>Access: School</span>
     <span id="access_type"></span>
     <span>|</span>
-    <button>Logout</button>
+    <a id="logout" href="../index.php">Logout</a>
     <a href="tel:5306232861">530-623-2861</a>
     <a href="mailto:hoswc@tcoek12.org">hoswc@tcoek12.org</a>
   </div>
@@ -27,6 +27,9 @@
     <p class="header">School</p>
     <p class="header_small"></p>
   </div>
+  <?php
+    include('studentResults.php');
+  ?>
 </div>
 </div>
 <footer>
