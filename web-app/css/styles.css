@@ -10,6 +10,8 @@
 
 #banner p {
   color: white;
+  margin-top: 32px;
+  width: 256px;
 }
 
 #bg_img {
