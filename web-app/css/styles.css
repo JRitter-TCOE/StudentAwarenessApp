@@ -197,6 +197,7 @@ nav div {
 }
 
 nav #info {
+  flex: 1;
   height: 96px;
   background-color: #3c8500;
   padding-right: 32px;
@@ -216,6 +217,11 @@ nav #info a,button,span {
 nav #tabs {
   height: 48px;
   background-color: grey;
+}
+
+nav #topBar {
+  display: flex;
+  align-items: center;
 }
 
 #report,#login p {
