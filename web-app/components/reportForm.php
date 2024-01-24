@@ -35,7 +35,7 @@
   <p class='feedback' id='report_feedback'></p>
 
   <div id='btn_row'>
-    <input id='submit_btn' type="submit" value="Submit FOCUS">
+    <input id='submit_btn' type="submit" value="Submit Report">
   </div>
 </form>
 
