@@ -22,7 +22,7 @@
 </nav>
 <div id="notifications">
   <div id="headers" class="row">
-    <p class="header_small"></p>
+    <p class="header_small">Status</p>
     <p class="header">Date</p>
     <p class="header">First Name</p>
     <p class="header">Last Name</p>
