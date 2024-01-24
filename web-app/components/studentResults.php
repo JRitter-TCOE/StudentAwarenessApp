@@ -2,18 +2,10 @@
 $testData = [
   array(
     "status" => 0, 
-    "date" => "01-10-2024",
+    "date" => "01-20-2024",
     "child_fname" => "Billy",
     "child_lname" => "Kidd",
     "dob" => "04-28-2010",
-    "school" => "East Weaver"
-  ),
-  array(
-    "status" => 0, 
-    "date" => "01-12-2024",
-    "child_fname" => "John",
-    "child_lname" => "Smith",
-    "dob" => "07-03-2014",
     "school" => "East Weaver"
   ),
   array(
@@ -26,12 +18,21 @@ $testData = [
   ),
   array(
     "status" => 0, 
-    "date" => "01-20-2024",
+    "date" => "01-12-2024",
+    "child_fname" => "John",
+    "child_lname" => "Smith",
+    "dob" => "07-03-2014",
+    "school" => "East Weaver"
+  ),
+  array(
+    "status" => 0, 
+    "date" => "01-10-2024",
     "child_fname" => "Billy",
     "child_lname" => "Kidd",
     "dob" => "04-28-2010",
     "school" => "East Weaver"
   )
+  
 ];
 
 
