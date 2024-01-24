@@ -103,10 +103,12 @@ hr {
 
 #headers {
   border-bottom: 2px solid lightgrey;
+  padding: 0px 16px;
 }
 
 .header_small {
   flex: 1;
+  font-weight: bold;
 }
 
 input, select {
