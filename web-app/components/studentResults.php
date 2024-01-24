@@ -38,6 +38,15 @@ $testData = [
 
 foreach ($testData as $entry) {
 
+  $status;
+
+  if ($entry['status'] == 1) {
+    $status = "Notified";
+  }
+  else {
+    $status = "Active";
+  }
+
   $date = $entry['date'];
   $fname = $entry['child_fname'];
   $lname = $entry['child_lname'];
@@ -45,7 +54,7 @@ foreach ($testData as $entry) {
   $school = $entry['school'];
 
   echo "<div class='row entry'>
-    <p class='field_small'></p>
+    <p class='field_small'>$status</p>
     <p class='field'>$date</p>
     <p class='field'>$fname</p>
     <p class='field'>$lname</p>
