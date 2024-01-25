@@ -38,12 +38,12 @@ $testData = [
 
 foreach ($testData as $entry) {
 
-  $status = '';
+  $status = '<ion-icon class="notification_handled" name="checkmark-circle" size="large" ></ion-icon>';
   $button = '';
 
   if ($entry['status'] == 0) {
-    $status = '<ion-icon id="new_notification" name="notifications" size="large"></ion-icon>';
-    $button = '<ion-icon id="confirm_btn" name="checkbox-outline" size="large"></ion-icon>';
+    $status = '<ion-icon class="notification_new" name="notifications" size="large"></ion-icon>';
+    $button = '<ion-icon class="confirm_btn" name="checkbox-outline" size="large"></ion-icon>';
   }
 
   $date = $entry['date'];
