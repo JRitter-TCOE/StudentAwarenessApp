@@ -31,19 +31,14 @@ body {
   font-family: sans-serif;
 }
 
-#login,#report {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  background-color: black;
-}
-
 #btn_row {
   display: flex;
   justify-content: flex-end;
   width: 100%;
+}
+
+#confirm_btn {
+  color: lightgreen;
 }
 
 #container {
@@ -184,6 +179,15 @@ label[for='school'] {
   border-radius: 5px;
 }
 
+#login,#report {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: black;
+}
+
 #logo {
   width: 256px;
   height: 256px;
@@ -234,6 +238,10 @@ nav #tabs {
 nav #topBar {
   display: flex;
   align-items: center;
+}
+
+#new_notification {
+  color: red;
 }
 
 #report,#login p {

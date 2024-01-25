@@ -42,8 +42,8 @@ foreach ($testData as $entry) {
   $button = '';
 
   if ($entry['status'] == 0) {
-    $status = '<ion-icon name="notifications-outline" size="large"></ion-icon>';
-    $button = '<ion-icon name="checkbox-outline" size="large"></ion-icon>';
+    $status = '<ion-icon id="new_notification" name="notifications-outline" size="large"></ion-icon>';
+    $button = '<ion-icon id="confirm_btn" name="checkbox-outline" size="large"></ion-icon>';
   }
 
   $date = $entry['date'];
