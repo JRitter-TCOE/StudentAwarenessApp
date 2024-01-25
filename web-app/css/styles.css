@@ -38,7 +38,7 @@ body {
 }
 
 #confirm_btn {
-  color: lightgreen;
+  color: green;
 }
 
 #container {
@@ -241,7 +241,7 @@ nav #topBar {
 }
 
 #new_notification {
-  color: red;
+  color: rgb(209, 209, 32);
 }
 
 #report,#login p {
