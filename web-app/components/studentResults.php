@@ -38,13 +38,12 @@ $testData = [
 
 foreach ($testData as $entry) {
 
-  $status;
+  $status = '';
+  $button = '';
 
-  if ($entry['status'] == 1) {
-    $status = "Notified";
-  }
-  else {
-    $status = "Active";
+  if ($entry['status'] == 0) {
+    $status = '<ion-icon name="ion-android-notifications" size="small"></ion-icon>';
+    $button = '<ion-icon name="ion-android-checkbox-outline" size="small"></ion-icon>';
   }
 
   $date = $entry['date'];
@@ -60,7 +59,7 @@ foreach ($testData as $entry) {
     <p class='field'>$lname</p>
     <p class='field'>$dob</p>
     <p class='field'>$school</p>
-    <p class='field_small'></p>
+    <p class='field_small'>$button</p>
   </div>";
 
 }
