@@ -55,6 +55,10 @@ body {
   min-width: 256px;
 }
 
+.entry {
+  padding: 0px 16px;
+}
+
 .entry:nth-child(odd) {
   background-color: lightgrey;
 }

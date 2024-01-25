@@ -9,7 +9,7 @@ $testData = [
     "school" => "East Weaver"
   ),
   array(
-    "status" => 0, 
+    "status" => 1, 
     "date" => "01-17-2024",
     "child_fname" => "Sally",
     "child_lname" => "Field",
@@ -17,7 +17,7 @@ $testData = [
     "school" => "East Weaver"
   ),
   array(
-    "status" => 0, 
+    "status" => 1, 
     "date" => "01-12-2024",
     "child_fname" => "John",
     "child_lname" => "Smith",
@@ -25,7 +25,7 @@ $testData = [
     "school" => "East Weaver"
   ),
   array(
-    "status" => 0, 
+    "status" => 1, 
     "date" => "01-10-2024",
     "child_fname" => "Billy",
     "child_lname" => "Kidd",
