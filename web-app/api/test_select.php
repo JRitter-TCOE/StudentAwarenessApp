@@ -1,6 +1,15 @@
 <?php
 
+
+if ($_SESSION['username'] == NULL) {
+    echo "<h1>ACCESS DENIED</h1>";
+    die();
+}
+
+
 include('./db_connection.php');
+
+
 
 $table = 'Agencies';
 
