@@ -3,7 +3,7 @@
 
 if ($_SESSION['username'] == NULL) {
     echo "<h1>ACCESS DENIED</h1>";
-    echo $_SESSION['username'];
+    echo "<p>$_SESSION['username']</p>";
     die();
 }
 
