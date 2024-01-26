@@ -39,6 +39,8 @@ body {
 
 .confirm_btn {
   color: rgb(0, 119, 255);
+  border: none;
+  cursor: pointer;
 }
 
 #container {
