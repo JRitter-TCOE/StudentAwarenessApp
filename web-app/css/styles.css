@@ -31,8 +31,6 @@ input, select {
   padding: 8px;
 }
 
-
-
 #login_btn {
   border-radius: 16px;
   background-color: rgb(29, 167, 58);
@@ -45,7 +43,6 @@ input, select {
   cursor: pointer;
 }
 
-
 #login_redirect {
   width: 100%;
   min-height: 100vh;
@@ -53,6 +50,7 @@ input, select {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  color: white;
 }
 
 #login_redirect a {
