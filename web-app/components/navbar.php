@@ -9,8 +9,8 @@
       <span id="access_type"></span>
       <span>|</span>
       <a id="logout" href="../index.php">Logout</a>
-      <a href="tel:5306232861"><ion-icon name="call-outline"></ion-icon>: 530-623-2861</a>
-      <a href="mailto:hoswc@tcoek12.org"><ion-icon name="call-outline"></ion-icon>: hoswc@tcoek12.org</a>
+      <a href="tel:5306232861"><ion-icon name="call"></ion-icon>: 530-623-2861</a>
+      <a href="mailto:hoswc@tcoek12.org"><ion-icon name="mail"></ion-icon>: hoswc@tcoek12.org</a>
     </div>
   </div>
   <div id="tabs">
