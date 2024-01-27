@@ -68,5 +68,6 @@ label[for='school'] {
   color: white;
   border: none;
   border-radius: 5px;
-  margin-top: 32px;
+  margin: 16px;
+  padding: 16px auto;
 }
