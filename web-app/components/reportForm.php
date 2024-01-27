@@ -11,7 +11,7 @@
   <label>TIME OF INCIDENT:</label>
   <input id='inc_time' name='inc_time'>
 
-  <label for='agency'>AGENCY REFERRED BY:</label>
+  <label for='agency'>REPORTING AGENCY:</label>
   <?php 
   echo "<input id='agency' name='agency' value='".$_SESSION['username']."'>";
   ?>
