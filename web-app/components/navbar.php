@@ -2,7 +2,7 @@
   <div id="topBar">
   <img id="nav_logo" src="../images/logo.png">
     <div id="info">
-      <span>Welcome:&nbsp;SEast&nbsp;SWeaver</span>
+      <span>Welcome:&nbsp;East&nbsp;Weaver</span>
       <span id="current_user"></span>
       <span>Access:&nbsp;School</span>
       <span id="access_type"></span>
