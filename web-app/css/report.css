@@ -68,7 +68,7 @@ label[for='school'] {
   border: none;
   border-radius: 5px;
   margin: 16px;
-  padding: 32px;
-  font-size: 24pt;
+  padding: 16px;
+  font-size: 20pt;
   cursor: pointer;
 }
