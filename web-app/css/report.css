@@ -22,8 +22,16 @@ h1 {
   line-height: clamp(32pt, 5vw, 64pt);
 }
 
+h2 {
+  color: white;
+  margin: 0px;
+}
+
+input, select {
+  margin-bottom: 32px;
+}
+
 label {
-  margin-top: 32px;
   font-size: 12pt;
   color: white;
 }
