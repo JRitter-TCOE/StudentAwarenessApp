@@ -25,7 +25,7 @@ session_destroy();
         <p class='feedback' id='login_feedback'></p>
         <input id='login_btn' type="submit" value="Login">
       </form>
-      <p>Created By:</p>
+      <p class="credit">Created By:</p>
       <img id="tcoe_logo" src="./images/TCOE_header.png">
     </div>
 

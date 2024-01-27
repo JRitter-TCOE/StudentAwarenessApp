@@ -8,7 +8,7 @@
   padding: 16px;
 }
 
-#banner p {
+.credit {
   color: white;
   margin-top: 32px;
   width: 256px;
@@ -22,10 +22,6 @@
   align-items: center;
   min-height: 100vh;
   background-color: black;
-}
-
-#login p {
-  color: white;
 }
 
 #login_form {
