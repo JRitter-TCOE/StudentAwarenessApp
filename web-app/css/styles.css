@@ -74,6 +74,7 @@ nav #info {
   flex: 1;
   height: 96px;
   padding-right: 32px;
+  flex-wrap: wrap;
 }
 
 nav #info a,button,span {
