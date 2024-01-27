@@ -15,8 +15,9 @@ body {
 }
 
 .feedback {
-  color: red;
   font-weight: bold;
+  width: 100%;
+  text-align: center;
 }
 
 hr {
