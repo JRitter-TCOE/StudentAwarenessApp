@@ -78,6 +78,7 @@ nav #info {
 
 nav #info a,button,span {
   margin-right: 8px;
+  margin-left: 8px;
   color: white;
   text-decoration: none;
 }
