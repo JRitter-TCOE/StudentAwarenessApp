@@ -2,12 +2,10 @@
   <div id="topBar">
   <img id="nav_logo" src="../images/logo.png">
     <div id="info">
-      <span>Welcome: East Weaver</span>
+      <span>Welcome:&nbsp;SEast&nbsp;SWeaver</span>
       <span id="current_user"></span>
-      <span>|</span>
-      <span>Access: School</span>
+      <span>Access:&nbsp;School</span>
       <span id="access_type"></span>
-      <span>|</span>
       <a id="logout" href="../index.php">Logout</a>
       <ion-icon name="call"></ion-icon>
       <a href="tel:5306232861">530-623-2861</a>
