@@ -3,10 +3,10 @@
 session_start();
 
 
-if ($_SESSION['username'] == NULL) {
-    echo "<h1>ACCESS DENIED</h1>";
-    die();
-}
+// if ($_SESSION['username'] == NULL) {
+//     echo "<h1>ACCESS DENIED</h1>";
+//     die();
+// }
 
 
 include('./db_connection.php');
