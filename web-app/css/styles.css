@@ -104,6 +104,7 @@ nav #info_menu {
   z-index: 1;
   width: 256px;
   color: white;
+  display: none;
 }
 
 nav #info a,button,span {

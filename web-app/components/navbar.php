@@ -18,7 +18,7 @@
         <a id="logout" href="../index.php">Logout</a>
       </div>
       <div id="short_info">
-        <ion-icon name="menu-outline" size="large"></ion-icon>
+        <ion-icon id="nav_menu_btn" name="menu-outline" size="large"></ion-icon>
         <div id="info_menu">
           <p>Welcome:<span>East&nbsp;Weaver</span></p>
           <p>Access:<span>School</span></p>
