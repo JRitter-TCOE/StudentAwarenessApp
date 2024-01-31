@@ -100,6 +100,8 @@ nav #info_menu {
   position: absolute;
   top: 100%;
   right: 0;
+  flex-direction: column;
+
 }
 
 nav #info a,button,span {
@@ -120,7 +122,6 @@ nav #short_info {
   padding: 8px;
   border-radius: 15px;
   position: relative;
-  flex-direction: column;
 }
 
 
