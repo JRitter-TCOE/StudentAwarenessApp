@@ -96,11 +96,14 @@ nav #info {
 }
 
 nav #info_menu {
-  background-color: blue;
+  background-color: green;
   position: absolute;
-  top: 100%;
+  top: 120%;
   right: 0;
   flex-direction: column;
+  z-index: 1;
+  width: 256px;
+  color: white;
 }
 
 nav #info a,button,span {
@@ -121,6 +124,10 @@ nav #short_info {
   padding: 8px;
   border-radius: 15px;
   position: relative;
+}
+
+nav #short_info ion-icon {
+  cursor: pointer;
 }
 
 
