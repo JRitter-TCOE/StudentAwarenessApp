@@ -2,9 +2,17 @@
   nav #long_info {
     display: none;
   }
+
+  nav #short_info {
+    display: block;
+  }
 }
 
 @media (min-width: 600px) {
+  nav #long_info {
+    display: flex;
+  }
+
   nav #short_info {
     display: none;
   }
@@ -91,10 +99,6 @@ nav #info a,button,span {
   margin-right: 8px;
   color: white;
   text-decoration: none;
-}
-
-nav #long_info {
-  display: flex;
 }
 
 #nav_logo {
