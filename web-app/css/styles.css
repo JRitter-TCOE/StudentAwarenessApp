@@ -93,11 +93,21 @@ nav #info a,button,span {
   text-decoration: none;
 }
 
+nav #long_info {
+  display: flex;
+}
+
 #nav_logo {
   height: 120px;
   width: auto;
   padding: 16px;
   border-radius: 25px;
+}
+
+nav #short_info {
+  border: 4px solid white;
+  padding: 16px;
+  flex: 1;
 }
 
 nav #tabs {
