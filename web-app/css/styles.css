@@ -100,7 +100,7 @@ nav #info_menu {
   position: absolute;
   top: 120%;
   right: 0;
-  flex-direction: column;
+  padding: 16px;
   z-index: 1;
   width: 256px;
   color: white;
