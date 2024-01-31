@@ -120,6 +120,7 @@ nav #short_info {
   padding: 8px;
   border-radius: 15px;
   position: relative;
+  flex-direction: column;
 }
 
 
