@@ -1,11 +1,11 @@
 @media (max-width: 600px) {
-  nav #info {
+  nav #long_info {
     display: none;
   }
 }
 
 @media (min-width: 600px) {
-  nav #info_menu_btn {
+  nav #short_info {
     display: none;
   }
 }
@@ -107,7 +107,6 @@ nav #long_info {
 nav #short_info {
   border: 4px solid white;
   padding: 16px;
-  flex: 1;
 }
 
 nav #tabs {
