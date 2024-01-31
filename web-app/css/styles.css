@@ -4,6 +4,12 @@
   }
 }
 
+@media (min-width: 600px) {
+  nav #info_menu_btn {
+    display: none;
+  }
+}
+
 
 #bg_img {
   width: 100vw;

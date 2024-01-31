@@ -16,6 +16,9 @@
       <span>|</span>
       <a id="logout" href="../index.php">Logout</a>
     </div>
+    <div id="info_menu_btn">
+      <ion-icon name="menu-outline" size="large"></ion-icon>
+    </div>
   </div>
   <div id="tabs">
     <div class="tab">
