@@ -95,6 +95,12 @@ nav #info {
   padding-right: 32px;
 }
 
+nav #info_menu {
+  background-color: white;
+  position: absolute;
+  top: 100%;
+}
+
 nav #info a,button,span {
   margin-right: 8px;
   color: white;
@@ -111,8 +117,10 @@ nav #info a,button,span {
 nav #short_info {
   border: 4px solid white;
   padding: 8px;
-  border-radius: 25px;
+  border-radius: 15px;
+  position: relative;
 }
+
 
 nav #tabs {
   height: 48px;

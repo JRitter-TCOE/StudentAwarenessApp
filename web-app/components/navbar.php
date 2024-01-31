@@ -19,6 +19,19 @@
       </div>
       <div id="short_info">
         <ion-icon name="menu-outline" size="large"></ion-icon>
+        <ul id="info_menu">
+          <li>Welcome:<span>East&nbsp;Weaver</span></li>
+          <li>Access:<span>School</span></li>
+          <li>
+            <ion-icon name="call"></ion-icon>
+            <a href="tel:5306232861">530-623-2861</a>
+          </li>
+          <li>
+            <ion-icon name="mail"></ion-icon>
+            <a href="mailto:hoswc@tcoek12.org">hoswc@tcoek12.org</a>
+          </li>
+          <li><a id="logout" href="../index.php">Logout</a></li>
+        </ul>
       </div>
     </div>
   </div>
