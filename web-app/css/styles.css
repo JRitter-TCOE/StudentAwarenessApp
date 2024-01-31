@@ -96,12 +96,11 @@ nav #info {
 }
 
 nav #info_menu {
-  background-color: white;
+  background-color: blue;
   position: absolute;
   top: 100%;
   right: 0;
   flex-direction: column;
-
 }
 
 nav #info a,button,span {
