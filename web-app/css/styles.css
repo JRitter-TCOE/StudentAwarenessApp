@@ -105,6 +105,8 @@ nav #info_menu {
   width: 256px;
   color: white;
   display: none;
+  border-radius: 10px;
+  border: 4px solid lightgreen;
 }
 
 nav #info a,button,span {
