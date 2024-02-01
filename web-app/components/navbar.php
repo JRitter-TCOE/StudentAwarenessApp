@@ -4,10 +4,10 @@
     <div id="info">
       <div id="long_info">
         <span>Welcome:</span>
-        <span id="current_user">East&nbsp;Weaver</span>
+        <span>East&nbsp;Weaver</span>
         <span>|</span>
         <span>Access:</span>
-        <span id="access_type">School</span>
+        <span><?php echo $_SESSION['role'] ?></span>
         <span>|</span>
         <ion-icon name="call"></ion-icon>
         <a href="tel:5306232861">530-623-2861</a>
@@ -21,7 +21,7 @@
         <ion-icon id="nav_menu_btn" name="menu-outline" size="large"></ion-icon>
         <div id="info_menu">
           <p>Welcome:<span>East&nbsp;Weaver</span></p>
-          <p>Access:<span>School</span></p>
+          <p>Access:<span><?php echo $_SESSION['role'] ?></span></p>
           <p>
             <ion-icon name="call"></ion-icon>
             <a href="tel:5306232861">530-623-2861</a>
