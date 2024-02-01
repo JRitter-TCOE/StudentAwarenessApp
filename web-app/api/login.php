@@ -24,6 +24,15 @@ if ($row['UserPass'] == $_POST['password']) {
 }
 else {
   echo json_encode(array("data"=>"FAILURE"));
+  die();
 }
+
+$table = "Schools";
+
+$stmt = $db->prepare("SELECT SchoolName FROM $table where SchoolID = '?'");
+$stmt->execute([$_SESSION['orgID']]);
+$row = $stmt->fetch();
+
+$_SESSION['schoolName'] = $row['SchoolName'];
 
 ?>
