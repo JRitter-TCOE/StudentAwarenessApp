@@ -12,7 +12,7 @@ $table = 'Login';
 
 $username = $_POST['username'];
 
-foreach($db->query("SELECT UserPass FROM $table where UserName = '$username'") as $row) {
+foreach($db->query("SELECT UserPass, Role FROM $table where UserName = '$username'") as $row) {
     if ($row['UserPass'] == $_POST['password']) {
       echo json_encode(array("data"=>"SUCCESS"));
       $_SESSION['username'] = $_POST['username'];
