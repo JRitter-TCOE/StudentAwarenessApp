@@ -12,7 +12,7 @@ $table = 'Login';
 $username = $_POST['username'];
 
 
-$stmt = $db->prepare("SELECT UserPass, Role, OrgID FROM $table where UserName = $username");
+$stmt = $db->prepare("SELECT UserPass, Role, OrgID FROM $table where UserName = '$username'");
 $stmt->execute();
 $row = $stmt->fetch();
 
