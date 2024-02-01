@@ -29,7 +29,7 @@ else {
 
 $table = "Schools";
 
-$stmt = $db->prepare("SELECT SchoolName FROM $table where SchoolID = '?'");
+$stmt = $db->prepare("SELECT SchoolName FROM $table where SchoolID = ?");
 $stmt->execute([$_SESSION['orgID']]);
 $row = $stmt->fetch();
 
