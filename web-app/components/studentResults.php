@@ -57,7 +57,7 @@ foreach ($data as $entry) {
   $status = '<ion-icon class="notification_handled" name="checkmark-circle" size="large" ></ion-icon>';
   $button = '';
 
-  if ($entry['status'] == 0) {
+  if ($entry['Status'] == 0) {
     $status = '<ion-icon class="notification_new" name="notifications" size="large"></ion-icon>';
     $button = '<button class="confirm_btn"><ion-icon name="checkbox-outline" size="large"></ion-icon></button>';
   }
