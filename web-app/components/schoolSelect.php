@@ -10,7 +10,7 @@ include('../api/db_connection.php');
 
   foreach($db->query("SELECT SchoolID, SchoolName FROM $table") as $row) {
     $value = $row["SchoolID"];
-    $name = $row["SchoolName"]
+    $name = $row["SchoolName"];
 
     echo "<option value=$value>$name</option>";
   }
