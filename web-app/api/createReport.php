@@ -40,7 +40,7 @@ try {
             $school,
             '$child_fname',
             '$child_lname',
-            '$child_dob',
+            $child_dob,
             '$inc_date',
             '$inc_time',
             '$agency',
