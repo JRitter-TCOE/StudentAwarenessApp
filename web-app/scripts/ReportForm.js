@@ -1,3 +1,5 @@
+import { post } from "./Requests";
+
 const form = document.getElementById('report_form');
 const inc_date = document.getElementById('inc_date');
 const inc_time = document.getElementById('inc_time');
@@ -21,13 +23,15 @@ inc_time.value = date.toLocaleTimeString();
 
 
 // Form submit function
-form.onsubmit = (e) => {
+form.onsubmit = async (e) => {
   e.preventDefault();
 
   const values = getFormValues();
 
   if (verifyReportForm(values)) {
     // submit report form values to backend
+    const result = await post("../api/createReport.php", values);
+    console.log(result);
     alert("You have successfully submitted a report.");
     
   }
