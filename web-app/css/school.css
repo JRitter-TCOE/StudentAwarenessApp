@@ -2,6 +2,7 @@
   color: rgb(0, 119, 255);
   border: none;
   cursor: pointer;
+  background: none;
 }
 
 .entry {
