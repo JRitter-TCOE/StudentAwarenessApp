@@ -5,7 +5,7 @@ session_start();
 
 $inc_date = $_POST['inc_date'];
 $inc_time = $_POST['inc_time'];
-$agency = $_POST['agency'];
+$agency = $_SESSION['orgID'];
 $reported_by = $_POST['reported_by'];
 $case_num = $_POST['case_num'];
 $child_fname = $_POST['child_fname'];
