@@ -16,6 +16,7 @@ $stmt = $db->prepare("SELECT UserPass, Role, OrgID FROM $table where UserName = 
 $stmt->execute();
 $row = $stmt->fetch();
 
+// Log in to site checking credentials in DB
 if ($row['UserPass'] == $_POST['password']) {
   echo json_encode(array("data"=>"SUCCESS"));
   $_SESSION['username'] = $_POST['username'];
@@ -27,12 +28,15 @@ else {
   die();
 }
 
-$table = "Schools";
-
-$stmt = $db->prepare("SELECT SchoolName FROM $table where SchoolID = ?");
-$stmt->execute([$_SESSION['orgID']]);
-$row = $stmt->fetch();
-
-$_SESSION['schoolName'] = $row['SchoolName'];
+// Save school name if role is "School"
+if ($_SESSION['role'] == "School") {
+  $table = "Schools";
+  
+  $stmt = $db->prepare("SELECT SchoolName FROM $table where SchoolID = ?");
+  $stmt->execute([$_SESSION['orgID']]);
+  $row = $stmt->fetch();
+  
+  $_SESSION['schoolName'] = $row['SchoolName'];
+}
 
 ?>
