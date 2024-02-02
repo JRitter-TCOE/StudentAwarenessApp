@@ -41,15 +41,15 @@ include('../api/db_connection.php');
 
 $schoolID = $_SESSION['orgID'];
 
-$data = $db->query('SELECT 
+$data = $db->query("SELECT 
   Status, 
   IncidentDate, 
   FirstName, 
   LastName, 
   DateOfBirth
   FROM Students
-  WHERE SchoolID = $schoolID
-');
+  WHERE SchoolID = '$schoolID'
+");
 
 
 foreach ($data as $entry) {
