@@ -1,4 +1,4 @@
-import { post } from "./Requests";
+import { post } from "./Requests.js";
 
 const form = document.getElementById('report_form');
 const inc_date = document.getElementById('inc_date');
