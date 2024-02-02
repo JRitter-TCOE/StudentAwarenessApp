@@ -49,7 +49,7 @@ $data = $db->query('SELECT
   DateOfBirth
   FROM Students
   WHERE SchoolID = $schoolID
-')
+');
 
 
 foreach ($data as $entry) {
