@@ -16,34 +16,42 @@ $school = $_POST['school'];
 
 include("./db_connection.php");
 
-$table = "Students";
+try {
 
-$stmt = $db->prepare("INSERT INTO $table (
-    SchoolID,
-    FirstName,
-    LastName,
-    DateOfBirth,
-    IncidentDate,
-    IncidentTime,
-    ReportingAgency,
-    OfficerName,
-    CaseNumber,
-    Status 
-    )
-    VALUES (
-        $school,
-        '$child_fname',
-        '$child_lname',
-        '$child_dob',
-        '$inc_date',
-        '$inc_time',
-        '$agency',
-        '$reported_by',
-        '$case_num',
-        0
-    )
-");
+    $table = "Students";
 
-$stmt->execute();
+    $stmt = $db->prepare("INSERT INTO $table (
+        SchoolID,
+        FirstName,
+        LastName,
+        DateOfBirth,
+        IncidentDate,
+        IncidentTime,
+        ReportingAgency,
+        OfficerName,
+        CaseNumber,
+        Status 
+        )
+        VALUES (
+            $school,
+            '$child_fname',
+            '$child_lname',
+            '$child_dob',
+            '$inc_date',
+            '$inc_time',
+            '$agency',
+            '$reported_by',
+            '$case_num',
+            0
+        )
+    ");
 
+    $stmt->execute();
+
+    echo json_encode(array("data"=>"SUCCESS"));
+
+}
+catch (Exception $e) {
+    echo json_encode(array("data"=>"FAILURE"));
+}
 ?>
