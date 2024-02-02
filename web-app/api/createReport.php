@@ -52,6 +52,6 @@ try {
 
 }
 catch (Exception $e) {
-    echo json_encode(array("data"=>"FAILURE"));
+    echo json_encode(array("data"=>"FAILURE", "error"=>$e));
 }
 ?>
