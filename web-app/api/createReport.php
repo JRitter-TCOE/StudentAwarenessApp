@@ -14,7 +14,7 @@ $child_dob = $_POST['child_dob'];
 $school = $_POST['school'];
 
 if ($child_dob == '') {
-    $child_dob = NULL;
+    $child_dob = "NULL";
 }
 
 
