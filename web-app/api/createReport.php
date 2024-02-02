@@ -13,6 +13,10 @@ $child_lname = $_POST['child_lname'];
 $child_dob = $_POST['child_dob'];
 $school = $_POST['school'];
 
+if ($child_dob == '') {
+    $child_dob = NULL;
+}
+
 
 include("./db_connection.php");
 
