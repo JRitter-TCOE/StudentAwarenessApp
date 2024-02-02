@@ -16,6 +16,9 @@ $school = $_POST['school'];
 if ($child_dob == '') {
     $child_dob = "NULL";
 }
+else {
+    $child_dob = "'".$child_dob."'";
+}
 
 
 include("./db_connection.php");
