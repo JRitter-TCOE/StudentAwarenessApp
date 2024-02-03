@@ -3,6 +3,13 @@
   border: none;
   cursor: pointer;
   background: none;
+  position: relative;
+  z-index: 1;
+}
+
+.confirm_btn ion-icon {
+  position: relative;
+  z-index: -1;
 }
 
 .entry {
