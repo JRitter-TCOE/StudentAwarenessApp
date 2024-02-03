@@ -3,7 +3,7 @@ session_start();
 
 
 try {
-    $studentID = $_POST['studentId'];
+    $studentID = $_POST['studentID'];
     
     include('./db_connection.php');
     
