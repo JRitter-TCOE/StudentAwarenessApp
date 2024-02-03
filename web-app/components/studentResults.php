@@ -15,6 +15,7 @@ try {
     StudentID
     FROM Students
     WHERE SchoolID = '$schoolID'
+    ORDER BY Status ASC, StudentID DESC
   ");
 
 
