@@ -31,7 +31,7 @@ try {
 
     if ($entry['Status'] == 0) {
       $status = '<ion-icon class="notification_new" name="notifications" size="large"></ion-icon>';
-      $button = "<button value=$studentID class='confirm_btn'><ion-icon name='checkbox-outline' size='large'></ion-icon></button>";
+      $button = "<button value=$studentID class='confirm_btn'><ion-icon value=$studentID name='checkbox-outline' size='large'></ion-icon></button>";
     }
     
     echo "<div class='row entry'>
