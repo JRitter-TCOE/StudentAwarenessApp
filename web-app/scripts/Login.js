@@ -22,10 +22,10 @@ login.onsubmit = async (e) => {
     const res = await post('../api/login.php', params);
   
     if (res == "SUCCESS" && params.username == "wpd") {
-      window.location.href = './pages/report.php';
+      window.location.href = './report';
     }
     else if (res == "SUCCESS" && params.username == "EastW") {
-      window.location.href = './pages/school.php';
+      window.location.href = './school';
     }
     else {
       login_feedback.innerText = "Invalid Credentials";
