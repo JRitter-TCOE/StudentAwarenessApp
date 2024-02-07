@@ -2,7 +2,7 @@
   <?php include('navbar.php') ?>
   <div id="notifications">
     <?php
-      include('studentHeaders.html');
+      include('studentHeaders.php');
       include('studentResults.php');
     ?>
   </div>

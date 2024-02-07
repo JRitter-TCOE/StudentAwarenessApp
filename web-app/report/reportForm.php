@@ -28,7 +28,7 @@
   
   
   <label for='school_select'>SCHOOL:</label>
-  <?php include('../components/schoolSelect.php') ?>
+  <?php include('schoolSelect.php') ?>
 
   <h2>Optional Details</h2>
 
