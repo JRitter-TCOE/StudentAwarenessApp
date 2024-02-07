@@ -2,26 +2,30 @@
 
 session_start();
 
-ini_set('display_errors', 1);
-ini_set('display_startup_errors', 1);
-error_reporting(E_ALL);
+// ini_set('display_errors', 1);
+// ini_set('display_startup_errors', 1);
+// error_reporting(E_ALL);
 
+// Get DB connection
 include('./db_connection.php');
 
+// Set table name
 $table = 'Login';
+
+// Get username from POST params
 $username = $_POST['username'];
 
-
+// Fetch password, role and orgID from DB
 $stmt = $db->prepare("SELECT UserPass, Role, OrgID FROM $table where UserName = '$username'");
 $stmt->execute();
 $row = $stmt->fetch();
 
-// Log in to site checking credentials in DB
+// Log in to site checking credentials in DB and set standard session variables
 if ($row['UserPass'] == $_POST['password']) {
-  echo json_encode(array("data"=>"SUCCESS"));
   $_SESSION['username'] = $_POST['username'];
   $_SESSION['role'] = $row['Role'];
   $_SESSION['orgID'] = $row['OrgID'];
+  echo json_encode(array("data"=>"SUCCESS"));
 }
 else {
   echo json_encode(array("data"=>"FAILURE"));

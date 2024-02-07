@@ -2,7 +2,7 @@
 
 session_start();
 
-
+// Get all POST params
 $inc_date = $_POST['inc_date'];
 $inc_time = $_POST['inc_time'];
 $agency = $_SESSION['orgID'];
@@ -13,6 +13,7 @@ $child_lname = $_POST['child_lname'];
 $child_dob = $_POST['child_dob'];
 $school = $_POST['school'];
 
+// Set dob to NULL if not entered for SQL syntax
 if ($child_dob == '') {
     $child_dob = "NULL";
 }
@@ -20,13 +21,14 @@ else {
     $child_dob = "'".$child_dob."'";
 }
 
-
+// Get DB connection
 include("./db_connection.php");
 
 try {
 
     $table = "Students";
 
+    // Prepare statement to create new report in DB
     $stmt = $db->prepare("INSERT INTO $table (
         SchoolID,
         FirstName,
@@ -53,12 +55,16 @@ try {
         )
     ");
 
+    // Execute SQL statment
     $stmt->execute();
 
+    // Return Success Flag
     echo json_encode(array("data"=>"SUCCESS"));
 
 }
 catch (Exception $e) {
+
+    // Return Failure flag and error message
     echo json_encode(array("data"=>"FAILURE", "error"=>$e));
 }
 ?>
