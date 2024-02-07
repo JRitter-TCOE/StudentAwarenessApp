@@ -1,5 +1,5 @@
 <div id="content">
-  <?php include('navbar.php') ?>
+  <?php include('../components/navbar.php') ?>
   <div id="notifications">
     <?php
       include('studentHeaders.php');
