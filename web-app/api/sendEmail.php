@@ -11,7 +11,7 @@ $subject = "Test";
 $message = "This is a test email.";
 $headers = "From: jritter@tcoek12.org \r\n";
 
-mail($to, $subject, $message, $headers);
+mail($to, $subject, $message);
 
 echo "Email Sent";
 ?>
