@@ -22,7 +22,7 @@ error_reporting(E_ALL);
     <div id='container'>
       <?php 
       if (isset($_SESSION['username'])) {
-        include('reportForm.php');
+        include('./components/reportForm.php');
       }
       else {
         include('../components/loginRedirect.php');
