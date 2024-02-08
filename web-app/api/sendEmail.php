@@ -6,10 +6,10 @@ ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 
 
-$to = 'jritter@dcesd.org';
+$to = 'jritter@tcoek12.org';
 $subject = 'Test';
 $message = 'This is a test email.';
-$headers = 'From:jritter@dcesd.org';
+$headers = 'From: jritter@tcoek12.org';
 
 mail($to, $subject, $message, $headers);
 
