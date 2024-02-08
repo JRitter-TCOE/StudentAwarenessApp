@@ -10,7 +10,7 @@ error_reporting(E_ALL);
   <head>
     <title>HOWSC Notifications</title>
     <link rel="stylesheet" href="../css/styles.css">
-    <link rel="stylesheet" href="../css/school.css">
+    <link rel="stylesheet" href="./css/school.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   </head>
@@ -28,6 +28,6 @@ error_reporting(E_ALL);
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <script type="module" src="../scripts/Nav_Menu_Btn.js"></script>
-    <script type="module" src="../scripts/ConfirmStudentHandled.js"></script>
+    <script type="module" src="./scripts/ConfirmStudentHandled.js"></script>
   </body>
 </html>
