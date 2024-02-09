@@ -16,7 +16,7 @@ try {
     SchoolName
     FROM Students
     INNER JOIN Schools ON Schools.SchoolID = Students.SchoolID
-    WHERE Students.DistrictID = '$districtID'
+    WHERE Schools.DistrictID = '$districtID'
     ORDER BY Status ASC, StudentID DESC
   ");
 
