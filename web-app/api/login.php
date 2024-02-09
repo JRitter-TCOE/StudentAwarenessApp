@@ -40,7 +40,16 @@ if ($_SESSION['role'] == "School") {
   $stmt->execute([$_SESSION['orgID']]);
   $row = $stmt->fetch();
   
-  $_SESSION['schoolName'] = $row['SchoolName'];
+  $_SESSION['orgName'] = $row['SchoolName'];
+}
+else if ($_SESSION['role'] == "District") {
+  $table = "Districts";
+  
+  $stmt = $db->prepare("SELECT DistrictName FROM $table where DistrictID = ?");
+  $stmt->execute([$_SESSION['orgID']]);
+  $row = $stmt->fetch();
+  
+  $_SESSION['orgName'] = $row['DistrictName'];
 }
 
 ?>

@@ -4,7 +4,7 @@
     <div id="info">
       <div id="long_info">
         <span>Welcome:</span>
-        <span><?php echo $_SESSION['schoolName'] ?></span>
+        <span><?php echo $_SESSION['orgName'] ?></span>
         <span>|</span>
         <span>Access:</span>
         <span><?php echo $_SESSION['role'] ?></span>

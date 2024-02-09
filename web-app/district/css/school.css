@@ -1,0 +1,92 @@
+.confirm_btn {
+  color: rgb(0, 119, 255);
+  border: none;
+  cursor: pointer;
+  background: none;
+  position: relative;
+  z-index: 1;
+}
+
+.confirm_btn ion-icon {
+  position: relative;
+  z-index: -1;
+}
+
+.entry {
+  padding: 0px 16px;
+}
+
+.entry:nth-child(odd) {
+  background-color: lightgrey;
+}
+
+.field {
+  flex: 2;
+}
+  
+.field_small {
+  flex: 1;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 64px;
+  background-color:  #3c8500;
+  color: white;
+}
+
+.header {
+  flex: 2;
+  font-weight: bold;
+}
+  
+#headers {
+  border-bottom: 2px solid lightgrey;
+  padding: 0px 16px;
+}
+  
+.header_small {
+  flex: 1;
+  font-weight: bold;
+}
+
+#logout {
+  background-color: #00c23a;
+  border: none;
+  border-radius: 5px;
+  padding: 8px;
+}
+
+.notification_new {
+  color: red;
+}
+
+.notification_handled {
+  color: green;
+}
+
+#school {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+}
+
+#submit_btn:hover {
+  cursor: pointer;
+}
+
+.tab {
+  background-color: #3c8500;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  margin-right: 64px;
+}
+
+.tab span {
+  margin: 0;
+  padding: 0px 8px;
+}
