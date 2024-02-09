@@ -59,12 +59,12 @@ try {
     $stmt->execute();
 
     // Return Success Flag
-    echo json_encode(array("data"=>"SUCCESS"));
+    echo json_encode(array("status"=>"SUCCESS"));
 
 }
 catch (Exception $e) {
 
     // Return Failure flag and error message
-    echo json_encode(array("data"=>"FAILURE", "error"=>$e));
+    echo json_encode(array("status"=>"FAILURE", "error"=>$e));
 }
 ?>

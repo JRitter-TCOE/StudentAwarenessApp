@@ -25,10 +25,10 @@ if ($row['UserPass'] == $_POST['password']) {
   $_SESSION['username'] = $_POST['username'];
   $_SESSION['role'] = $row['Role'];
   $_SESSION['orgID'] = $row['OrgID'];
-  echo json_encode(array("data"=>"SUCCESS", "role"=>$_SESSION['role']));
+  echo json_encode(array("status"=>"SUCCESS", "role"=>$_SESSION['role']));
 }
 else {
-  echo json_encode(array("data"=>"FAILURE"));
+  echo json_encode(array("status"=>"FAILURE"));
   die();
 }
 

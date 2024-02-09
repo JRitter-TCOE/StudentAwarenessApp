@@ -17,12 +17,12 @@ try {
     $stmt->execute();
 
     // Return Success flag
-    echo json_encode(array('data'=>'SUCCESS', 'studentID'=>"$studentID"));
+    echo json_encode(array('status'=>'SUCCESS', 'studentID'=>"$studentID"));
 }
 catch (Exception $e) {
 
     // Return Failure flag and error message
-    echo json_encode(array("data"=>'FAILURE', 'error'=>$e));
+    echo json_encode(array("status"=>'FAILURE', 'error'=>$e));
 }
 
 
