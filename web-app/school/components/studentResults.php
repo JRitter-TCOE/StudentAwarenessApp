@@ -28,7 +28,7 @@ try {
     $fname = $entry['FirstName'];
     $lname = $entry['LastName'];
     $dob = $entry['DateOfBirth'];
-    $school = $entry['schoolName'];
+    $school = $entry['SchoolName'];
     $status = '<ion-icon class="notification_handled" name="checkmark-circle" size="large" ></ion-icon>';
     $button = '';
 
