@@ -4,7 +4,7 @@ try {
 
   include('../api/db_connection.php');
   
-  $schoolID = $_SESSION['orgID'];
+  $districtID = $_SESSION['orgID'];
   
   $data = $db->query("SELECT 
     Status, 
@@ -16,7 +16,7 @@ try {
     SchoolName
     FROM Students
     INNER JOIN Schools ON Schools.SchoolID = Students.SchoolID
-    WHERE Schools.SchoolID = '$schoolID'
+    WHERE Schools.SchoolID = '$districtID'
     ORDER BY Status ASC, StudentID DESC
   ");
 
