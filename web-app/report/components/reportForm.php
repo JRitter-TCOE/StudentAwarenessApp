@@ -54,4 +54,4 @@
 
 <p>2024 HOWSC California. All Rights Reserved.</p>
 
-<script type='module' src='../scripts/ReportForm.js'></script>
+<script type='module' src='./scripts/ReportForm.js'></script>
