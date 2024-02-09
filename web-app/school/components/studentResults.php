@@ -14,6 +14,7 @@ try {
     DateOfBirth,
     StudentID
     FROM Students
+    INNER JOIN Schools ON Schools.SchoolID = Students.SchoolID
     WHERE SchoolID = '$schoolID'
     ORDER BY Status ASC, StudentID DESC
   ");
