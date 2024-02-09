@@ -36,6 +36,17 @@
     </div>
   </div>
   <div id="tabs">
+    <?php
+    
+    if ($_SESSION['role'] == "District") {
+      echo "
+        <div class='tab'>
+          <span>Schools</span>
+        </div>
+      "
+    }
+
+    ?>
     <div class="tab">
       <span>Notifications</span>
     </div>
