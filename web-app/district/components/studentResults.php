@@ -12,8 +12,10 @@ try {
     FirstName, 
     LastName, 
     DateOfBirth,
-    StudentID
+    StudentID,
+    SchoolName
     FROM Students
+    INNER JOIN Schools ON Schools.SchoolID = Students.SchoolID
     WHERE SchoolID = '$schoolID'
     ORDER BY Status ASC, StudentID DESC
   ");
@@ -26,7 +28,7 @@ try {
     $fname = $entry['FirstName'];
     $lname = $entry['LastName'];
     $dob = $entry['DateOfBirth'];
-    $school = $_SESSION['schoolName'];
+    $school = $entry['SchoolName'];
     $status = '<ion-icon class="notification_handled" name="checkmark-circle" size="large" ></ion-icon>';
     $button = '';
 
