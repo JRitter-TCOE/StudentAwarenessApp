@@ -43,7 +43,7 @@
         <div class='tab'>
           <span>Schools</span>
         </div>
-      "
+      ";
     }
 
     ?>
