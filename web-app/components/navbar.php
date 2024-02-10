@@ -15,7 +15,7 @@
         <ion-icon name="mail"></ion-icon>
         <a href="mailto:hoswc@tcoek12.org">hoswc@tcoek12.org</a>
         <span>|</span>
-        <a id="logout" href="../index.php">Logout</a>
+        <a id="logout" href="https://hoswc.tcoek12.org">Logout</a>
       </div>
       <div id="short_info">
         <ion-icon id="nav_menu_btn" name="menu-outline" size="large"></ion-icon>
