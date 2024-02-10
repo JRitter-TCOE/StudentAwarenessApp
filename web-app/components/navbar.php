@@ -30,7 +30,7 @@
             <ion-icon name="mail"></ion-icon>
             <a href="mailto:hoswc@tcoek12.org">hoswc@tcoek12.org</a>
           </p>
-          <p><a id="logout" href="../../index.php">Logout</a></p>
+          <p><a id="logout" href="../../../index.php">Logout</a></p>
         </div>
       </div>
     </div>
