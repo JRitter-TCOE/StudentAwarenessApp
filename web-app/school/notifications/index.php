@@ -2,8 +2,8 @@
   <?php include('../components/navbar.php') ?>
   <div id="notifications">
     <?php
-      include('studentHeaders.php');
-      include('studentResults.php');
+      include('notificationHeaders.php');
+      include('notificationResults.php');
     ?>
   </div>
 </div>
