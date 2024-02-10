@@ -17,7 +17,7 @@ error_reporting(E_ALL);
   <body id="school">
     <?php 
     if (isset($_SESSION['username'])) {
-      include('./notifictions');
+      include('./notifictions/index.php');
     }
     else {
       echo '<img id="bg_img" src="../images/Background_3.jpg">';
