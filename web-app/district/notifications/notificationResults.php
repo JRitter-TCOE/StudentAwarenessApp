@@ -2,7 +2,7 @@
 
 try {
 
-  include('../api/db_connection.php');
+  include('../../api/db_connection.php');
   
   $districtID = $_SESSION['orgID'];
   
