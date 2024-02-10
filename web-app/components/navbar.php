@@ -1,6 +1,6 @@
 <nav>
   <div id="topBar">
-  <img id="nav_logo" src="../images/logo.png">
+  <img id="nav_logo" src="../../images/logo.png">
     <div id="info">
       <div id="long_info">
         <span>Welcome:</span>

@@ -20,14 +20,14 @@ error_reporting(E_ALL);
       include('./notificationView.php');
     }
     else {
-      echo '<img id="bg_img" src="../images/Background_3.jpg">';
+      echo '<img id="bg_img" src="../../images/Background_3.jpg">';
       include('../components/loginRedirect.php');
     }
     ?>
 
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-    <script type="module" src="../scripts/Nav_Menu_Btn.js"></script>
-    <script type="module" src="./scripts/ConfirmStudentHandled.js"></script>
+    <script type="module" src="../../scripts/Nav_Menu_Btn.js"></script>
+    <script type="module" src="../scripts/ConfirmStudentHandled.js"></script>
   </body>
 </html>
