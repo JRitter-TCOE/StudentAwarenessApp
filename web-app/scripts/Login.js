@@ -25,10 +25,10 @@ login.onsubmit = async (e) => {
       window.location.href = './report';
     }
     else if (res.status == "SUCCESS" && res.role == "School") {
-      window.location.href = './school';
+      window.location.href = './school/notifications';
     }
     else if (res.status == "SUCCESS" && res.role == "District") {
-      window.location.href = './district';
+      window.location.href = './district/notifications';
     }
     else {
       login_feedback.innerText = "Invalid Credentials";
