@@ -41,14 +41,14 @@
     if ($_SESSION['role'] == "District") {
       echo "
         <div class='tab'>
-          <span>Schools</span>
+          <a href='../schools'>Schools</a>
         </div>
       ";
     }
 
     ?>
     <div class="tab">
-      <span>Notifications</span>
+      <a href='../notifications'>Notifications</a>
     </div>
   </div>
 </nav>
