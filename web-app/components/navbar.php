@@ -20,7 +20,7 @@
       <div id="short_info">
         <ion-icon id="nav_menu_btn" name="menu-outline" size="large"></ion-icon>
         <div id="info_menu">
-          <p>Welcome:<span><?php echo $_SESSION['schoolName'] ?></span></p>
+          <p>Welcome:<span><?php echo $_SESSION['orgName'] ?></span></p>
           <p>Access:<span><?php echo $_SESSION['role'] ?></span></p>
           <p>
             <ion-icon name="call"></ion-icon>
