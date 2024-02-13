@@ -78,15 +78,3 @@ footer {
   cursor: pointer;
 }
 
-.tab {
-  background-color: #3c8500;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  margin-right: 64px;
-}
-
-.tab span {
-  margin: 0;
-  padding: 0px 8px;
-}

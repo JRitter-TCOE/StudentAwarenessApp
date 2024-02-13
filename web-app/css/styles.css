@@ -151,7 +151,20 @@ nav #topBar {
 }
 
 
+.tab {
+  background-color: #3c8500;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  margin-right: 64px;
+}
 
+.tab a {
+  margin: 0;
+  padding: 0px 8px;
+  color: white;
+  text-decoration: none;
+}
 
 
 
