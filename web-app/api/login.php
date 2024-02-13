@@ -27,11 +27,11 @@ if ($row['UserPass'] == $_POST['password']) {
   $_SESSION['role'] = $row['Role'];
   $_SESSION['orgID'] = $row['OrgID'];
   echo json_encode(array("status"=>"SUCCESS", "role"=>$_SESSION['role']));
-  loginActivity($_POST['username'], 'SUCCESS');
+  loginActivity($db, $_POST['username'], 'SUCCESS');
 }
 else {
   echo json_encode(array("status"=>"FAILURE"));
-  loginActivity($_POST['username'], 'FAILURE');
+  loginActivity($db, $_POST['username'], 'FAILURE');
   die();
 }
 
