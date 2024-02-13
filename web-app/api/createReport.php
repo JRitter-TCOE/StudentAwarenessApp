@@ -23,6 +23,7 @@ else {
 
 // Get DB connection
 include("./db_connection.php");
+include("./logActivity.php");
 
 try {
 
@@ -60,11 +61,14 @@ try {
 
     // Return Success Flag
     echo json_encode(array("status"=>"SUCCESS"));
+    reportCreated($db, $_SESSION['username'], 'SUCCESS');
 
 }
 catch (Exception $e) {
 
     // Return Failure flag and error message
     echo json_encode(array("status"=>"FAILURE", "error"=>$e));
+    reportCreated($db, $_SESSION['username'], 'FAILURE');
+
 }
 ?>
