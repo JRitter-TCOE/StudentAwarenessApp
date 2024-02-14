@@ -22,7 +22,7 @@ error_reporting(E_ALL);
       }
       else {
         echo '<img id="bg_img" src="../../images/Background_3.jpg">';
-        include("../../componentes/accessDenied.php");
+        include("../../components/accessDenied.php");
       }
     }
     else {
