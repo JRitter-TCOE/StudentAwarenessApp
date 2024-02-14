@@ -4,7 +4,7 @@ session_start();
 
 
 //Check to see if user is logged in and has proper role.
-if (isset($_SESSION['username'] && isset($_SESSION['role']))) {
+if (isset($_SESSION['username']) && isset($_SESSION['role'])) {
     if (!($_SESSION['role'] == 'Agency')) {
         die();
     }
