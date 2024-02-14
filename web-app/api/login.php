@@ -45,6 +45,8 @@ if ($_SESSION['role'] == "School") {
   
   $_SESSION['orgName'] = $row['SchoolName'];
 }
+
+// Save district name if role is "District"
 else if ($_SESSION['role'] == "District") {
   $table = "Districts";
   

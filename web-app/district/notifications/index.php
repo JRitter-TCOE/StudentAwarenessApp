@@ -17,11 +17,17 @@ error_reporting(E_ALL);
   <body id="school">
     <?php 
     if (isset($_SESSION['username'])) {
-      include('./notificationView.php');
+      if ($_SESSION['role'] == 'District') {
+        include('./notificationView.php');
+      }
+      else {
+        echo '<img id="bg_img" src="../../images/Background_3.jpg">';
+        include("../../componentes/accessDenied.php")
+      }
     }
     else {
       echo '<img id="bg_img" src="../../images/Background_3.jpg">';
-      include('../components/loginRedirect.php');
+      include('../../components/loginRedirect.php');
     }
     ?>
 
