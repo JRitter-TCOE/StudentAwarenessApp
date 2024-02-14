@@ -1,7 +1,15 @@
 <?php 
 session_start();
 
-//TODO: Add check to see if user is logged in.
+//Check to see if user is logged in and has proper role.
+if (isset($_SESSION['username'] && isset($_SESSION['role']))) {
+    if (!($_SESSION['role'] == 'School' || $_SESSION['role'] == 'District')) {
+        die();
+    }
+}
+else {
+    die();
+}
 
 
 try {

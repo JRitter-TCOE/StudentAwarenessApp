@@ -2,6 +2,19 @@
 
 session_start();
 
+
+//Check to see if user is logged in and has proper role.
+if (isset($_SESSION['username'] && isset($_SESSION['role']))) {
+    if (!($_SESSION['role'] == 'Agency')) {
+        die();
+    }
+}
+else {
+    die();
+}
+
+
+
 // Get all POST params
 $inc_date = $_POST['inc_date'];
 $inc_time = $_POST['inc_time'];
