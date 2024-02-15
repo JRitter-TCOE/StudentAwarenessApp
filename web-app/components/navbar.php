@@ -3,10 +3,10 @@
   <img id="nav_logo" src="../../images/logo.png">
     <div id="info">
       <div id="long_info">
-        <span>Welcome:</span>
+        <span>Welcome:&nbsp;</span>
         <span><?php echo $_SESSION['orgName'] ?></span>
         <span>|</span>
-        <span>Access:</span>
+        <span>Access:&nbsp;</span>
         <span><?php echo $_SESSION['role'] ?></span>
         <span>|</span>
         <ion-icon name="call"></ion-icon>

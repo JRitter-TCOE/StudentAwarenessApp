@@ -9,9 +9,11 @@ btn.onclick = (e) => {
     if (menu_hidden) {
         menu.show();
         menu_hidden = false;
+        btn.style.background = 'lightgreen';
     }
     else {
         menu.hide();
         menu_hidden = true;
+        btn.style.background = 'none';
     }
 }
