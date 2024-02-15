@@ -12,6 +12,12 @@
   z-index: -1;
 }
 
+@media (max-width: 1000px) {
+  .dob {
+    display: none;
+  }
+}
+
 .entry {
   padding: 0px 16px;
 }
