@@ -17,14 +17,9 @@
     display: none;
   }
 
-  .date {
-    display: none;
-  }
 }
 
-.entry {
-  padding: 0px 16px;
-}
+
 
 .entry:nth-child(odd) {
   background-color: lightgrey;
@@ -32,10 +27,15 @@
 
 .field {
   flex: 2;
+  font-size: clamp(8pt, 3vw, 16pt);
+  text-align: center;
 }
   
 .field_small {
   flex: 1;
+  font-size: clamp(8pt, 3vw, 16pt);
+  text-align: center;
+
 }
 
 footer {
@@ -50,6 +50,9 @@ footer {
 .header {
   flex: 2;
   font-weight: bold;
+  font-size: clamp(8pt, 3vw, 16pt);
+  text-align: center;
+
 }
   
 #headers {
@@ -60,6 +63,9 @@ footer {
 .header_small {
   flex: 1;
   font-weight: bold;
+  font-size: clamp(8pt, 3vw, 16pt);
+  text-align: center;
+
 }
 
 #logout {
