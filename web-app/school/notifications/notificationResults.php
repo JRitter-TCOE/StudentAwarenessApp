@@ -39,7 +39,7 @@ try {
     
     echo "<div class='row entry'>
     <p class='field_small'>$status</p>
-    <p class='field'>$date</p>
+    <p class='field date'>$date</p>
     <p class='field'>$fname</p>
     <p class='field'>$lname</p>
     <p class='field dob'>$dob</p>

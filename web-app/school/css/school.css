@@ -16,6 +16,10 @@
   .dob {
     display: none;
   }
+
+  .date {
+    display: none;
+  }
 }
 
 .entry {
