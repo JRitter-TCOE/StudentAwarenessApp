@@ -51,6 +51,7 @@ label[for='school'] {
 
 #report p {
   color: white;
+  text-align: center;
 }
 
 #report_form {
