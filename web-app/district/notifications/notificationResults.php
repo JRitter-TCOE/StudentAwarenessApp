@@ -42,7 +42,7 @@ try {
     <p class='field'>$date</p>
     <p class='field'>$fname</p>
     <p class='field'>$lname</p>
-    <p class='field'>$dob</p>
+    <p class='field dob'>$dob</p>
     <p class='field'>$school</p>
     <p class='field_small'>$button</p>
     </div>";
