@@ -1,4 +1,4 @@
-const btn = document.getElementById('nav_menu_btn');
+const btn = document.getElementById('short_info');
 const menu = $('#info_menu');
 
 menu.hide();
