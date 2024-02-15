@@ -23,7 +23,6 @@ try {
 
     
     echo "<div class='row entry'>
-    <p class='field_small'></p>
     <p class='field'>$schoolName</p>
     <p class='field'>$contactName</p>
     <p class='field'>$contactEmail</p>
