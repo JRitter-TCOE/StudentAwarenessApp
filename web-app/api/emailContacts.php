@@ -8,7 +8,7 @@ error_reporting(E_ALL);
 // Get School ID from POST
 
 $template = file_get_contents('./emailNotification.html');
-$template .= '<p>'. date("Y-m-d h:i:sa") .'</p>'
+$template .= '<p>'. date("Y-m-d h:i:sa") .'</p>';
 
 $to = "jritter@tcoek12.org";
 $subject = "HOSWC Student Notification";
