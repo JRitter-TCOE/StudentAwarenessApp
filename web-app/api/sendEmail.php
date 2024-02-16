@@ -9,7 +9,7 @@ error_reporting(E_ALL);
 $to = "jritter@dcesd.org";
 $subject = "New Site Test";
 $message = "This is a test email from hoswc.tcoek12.com.";
-$headers = "From: jritter@tcoek12.org \r\n";
+$headers = "From: HOSWC@tcoek12.org \r\n";
 
 mail($to, $subject, $message, $headers);
 
