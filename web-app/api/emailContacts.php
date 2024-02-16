@@ -14,6 +14,11 @@ $subject = "HOSWC Student Notification";
 $message = '
 <!DOCTYPE html>
 <head>
+    <style>
+        p {
+            color: red;
+        }
+    </style>
 </head>
 <body>
 <h1>You have a new alert from HOSWC</h1>
