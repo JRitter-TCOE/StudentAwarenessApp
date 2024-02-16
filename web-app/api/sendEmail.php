@@ -6,7 +6,7 @@ ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 
 
-$to = "jritter@dcesd.org";
+$to = "jakeritter77@gmail.com";
 $subject = "New Site Test";
 $message = "This is a test email from hoswc.tcoek12.com.";
 $headers = "From: HOSWC@tcoek12.org \r\n";
