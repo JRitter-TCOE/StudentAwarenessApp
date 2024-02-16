@@ -17,6 +17,8 @@ $message = '
 <p>Please DO NOT ask the student any details about the event to respect their privacy rights. Please DO treat the student with sensitivity and care.</p>
 ';
 $headers = "From: HOSWC@tcoek12.org \r\n";
+$headers .= "MIME-Version: 1.0\r\n";
+$headers .= "Content-Type: text/html; charset=UTF-8\r\n";
 
 mail($to, $subject, $message, $headers);
 
