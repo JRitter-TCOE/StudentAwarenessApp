@@ -2,6 +2,10 @@
 <head>
     <style>
 
+        .bad {
+            color: rgb(202, 0, 0);
+        }
+
         #banner {
             display: flex;
             background: green;
@@ -12,6 +16,7 @@
         #banner h1 {
             padding: 0;
             margin: 16px;
+            text-align: center;
         }
 
         body {
@@ -23,9 +28,22 @@
             align-items: center;
         }
 
+        #content {
+            width: 512px;
+        }
+
+        .good {
+            color: rgb(0, 184, 0);
+        }
+
         #hoswc_logo {
             width: 128px;
             height: auto;
+        }
+
+        #message {
+            font-weight: bold;
+            font-size: xx-large;
         }
 
         #tcoe_logo {
@@ -43,7 +61,7 @@
         </div>
         <div id="message">
             <p>Please log into the <a href="https://hoswc.tcoek12.org">Trinity County School or District Portal</a> to view your notifications.</p>
-            <p>Please DO NOT ask the student any details about the event to respect their privacy rights. Please DO treat the student with sensitivity and care.</p>
+            <p>Please <span class="bad">DO NOT</span> ask the student any details about the event to respect their privacy rights. Please <span class="good">DO</span> treat the student with sensitivity and care.</p>
         </div>
         <img id="tcoe_logo" src="https://hoswc.tcoek12.org/images//TCOE_header.png">
     </div>
