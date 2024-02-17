@@ -10,7 +10,7 @@ $school_ID = $_POST['school'];
 
 include("./db_connection.php");
 
-$stmt = $db->prepare("SELECT SchoolEmail FROM Schools where SchoolID = $school");
+$stmt = $db->prepare("SELECT SchoolEmail FROM Schools where SchoolID = $school_ID");
 $stmt->execute();
 $row = $stmt->fetch();
 
