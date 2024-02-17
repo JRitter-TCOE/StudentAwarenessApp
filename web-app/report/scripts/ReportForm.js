@@ -30,8 +30,10 @@ form.onsubmit = async (e) => {
 
   if (verifyReportForm(values)) {
     // submit report form values to backend
-    const result = await post("../api/createReport.php", values);
-    console.log(result);
+    const report_result = await post("../api/createReport.php", values);
+    console.log(report_result);
+    const email_result = await post("../api/emailContacts.php", {school: values.school});
+    console.log(email_result);
     alert("You have successfully submitted a report.");
     
   }
