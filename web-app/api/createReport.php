@@ -26,13 +26,13 @@ $child_lname = $_POST['child_lname'];
 $child_dob = $_POST['child_dob'];
 $school = $_POST['school'];
 
-// Set dob to NULL if not entered for SQL syntax
-if ($child_dob == '') {
-    $child_dob = "NULL";
-}
-else {
-    $child_dob = "'".$child_dob."'";
-}
+// // Set dob to NULL if not entered for SQL syntax
+// if ($child_dob == '') {
+//     $child_dob = "NULL";
+// }
+// else {
+//     $child_dob = "'".$child_dob."'";
+// }
 
 // Get DB connection
 include("./db_connection.php");
