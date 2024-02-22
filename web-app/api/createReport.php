@@ -28,7 +28,7 @@ $school = $_POST['school'];
 
 // // Set dob to NULL if not entered for SQL syntax
 if ($child_dob == '') {
-    $child_dob = "'NULL'";
+    $child_dob = NULL;
 }
 else {
     $child_dob = "'".$child_dob."'";
@@ -37,6 +37,8 @@ else {
 // Get DB connection
 include("./db_connection.php");
 include("./logActivity.php");
+
+$db->setAttribute(PDO::ATTR_EMULATE_PREPARES, false);
 
 try {
 
