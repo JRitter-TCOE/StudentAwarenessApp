@@ -17,6 +17,8 @@
 
 .field {
   display: flex;
+  align-items: flex-end;
+  border-bottom: 1px solid white;
 }
 
 ion-icon {
@@ -53,7 +55,6 @@ ion-icon {
   background: none;
   border: none;
   color: white;
-  border-bottom: 1px solid white;
   margin-top: 32px;
 }
 

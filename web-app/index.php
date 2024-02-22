@@ -21,11 +21,11 @@ session_destroy();
       <img id="logo" src="./images/logo.png">
       <form id='login_form'>
         <div class='field'>
-          <ion-icon name="person"></ion-icon>
+          <ion-icon name="person" size="large"></ion-icon>
           <input class="login_input" id='username' name='username' placeholder='Username'>
         </div>
         <div class='field'>
-          <ion-icon name="lock-closed"></ion-icon>
+          <ion-icon name="lock-closed" size="large"></ion-icon>
           <input class="login_input" id='password' name='password' type="password" placeholder="Password">
         </div>
         <p class='feedback' id='login_feedback'></p>
