@@ -26,13 +26,7 @@ $child_lname = $_POST['child_lname'];
 $child_dob = $_POST['child_dob'];
 $school = $_POST['school'];
 
-// // Set dob to NULL if not entered for SQL syntax
-// if ($child_dob == '') {
-//     $child_dob = "NULL";
-// }
-// else {
-//     $child_dob = "'".$child_dob."'";
-// }
+
 
 // Get DB connection
 include("./db_connection.php");
@@ -72,12 +66,20 @@ try {
     $stmt->bindParam(':school', $school);
     $stmt->bindParam(':child_fname', $child_fname);
     $stmt->bindParam(':child_lname', $child_lname);
-    $stmt->bindParam(':child_dob', $child_dob);
     $stmt->bindParam(':inc_date', $inc_date);
     $stmt->bindParam(':inc_time', $inc_time);
     $stmt->bindParam(':agency', $agency);
     $stmt->bindParam(':reported_by', $reported_by);
     $stmt->bindParam(':case_num', $case_num);
+
+    // // Set dob to NULL if not entered for SQL syntax
+if ($child_dob == '') {
+    $stmt->bindParam(':child_dob', NULL);
+
+}
+else {
+    $stmt->bindParam(':child_dob', $child_dob);
+}
 
     // Execute SQL statment
     $stmt->execute();
