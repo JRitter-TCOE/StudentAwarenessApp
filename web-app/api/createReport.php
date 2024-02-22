@@ -71,15 +71,15 @@ try {
         )
     ");
 
-    $stmt->bindParam(':school', $school);
-    $stmt->bindParam(':child_fname', $child_fname);
-    $stmt->bindParam(':child_lname', $child_lname);
-    $stmt->bindParam(':child_dob', $child_dob);
-    $stmt->bindParam(':inc_date', $inc_date);
-    $stmt->bindParam(':inc_time', $inc_time);
-    $stmt->bindParam(':agency', $agency);
-    $stmt->bindParam(':reported_by', $reported_by);
-    $stmt->bindParam(':case_num', $case_num);
+    $stmt->bindParam(':school', $school, PDO::PARAM_INT);
+    $stmt->bindParam(':child_fname', $child_fname, PDO::PARAM_STR);
+    $stmt->bindParam(':child_lname', $child_lname, PDO::PARAM_STR);
+    $stmt->bindParam(':child_dob', $child_dob, PDO::PARAM::STR);
+    $stmt->bindParam(':inc_date', $inc_date, PDO::PARAM::STR);
+    $stmt->bindParam(':inc_time', $inc_time, PDO::PARAM::STR);
+    $stmt->bindParam(':agency', $agency, PDO::PARAM_INT);
+    $stmt->bindParam(':reported_by', $reported_by, PDO::PARAM_STR);
+    $stmt->bindParam(':case_num', $case_num, PDO::PARAM_STR);
 
     // Execute SQL statment
     $stmt->execute();
