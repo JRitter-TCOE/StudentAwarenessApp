@@ -15,6 +15,14 @@
   text-align: left;
 }
 
+.field {
+  display: flex;
+}
+
+ion-icon {
+  color: white;
+}
+
 #login {
   display: flex;
   flex-direction: column;
