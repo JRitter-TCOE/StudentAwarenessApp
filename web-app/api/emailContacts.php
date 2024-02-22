@@ -21,9 +21,6 @@ try {
     date_default_timezone_set("America/Los_Angeles");
     $template = file_get_contents('./emailNotification.html');
     $template .= '<p>'. date("Y-m-d h:i:sa") .'</p>';
-    
-
-    //$recipients = explode(",", $row["SchoolEmail"]);
 
     $to = $row['SchoolEmail'];
     $subject = "HOSWC Student Notification " . date("Y-m-d h:i:sa");
@@ -31,12 +28,6 @@ try {
     $headers = "From: HOSWC@tcoek12.org \r\n";
     $headers .= "MIME-Version: 1.0\r\n";
     $headers .= "Content-Type: text/html; charset=UTF-8\r\n";
-
-    // if (count($recipients) > 1) {
-    //     for ($i = 1; $i < count($recipients); $i++) {
-    //         $headers .= "Cc: " . $recipients[$i] . "\r\n";
-    //     }
-    // }
 
     mail($to, $subject, $message, $headers);
     
