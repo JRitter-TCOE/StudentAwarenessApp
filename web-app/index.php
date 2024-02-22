@@ -13,7 +13,7 @@ session_destroy();
   </head>
   <body id="login">
 
-    <img id="bg_img" src="./images/Background_1.jpg">
+    <img id="bg_img" src="./images/Background_1_smaller.jpg">
 
     
 
