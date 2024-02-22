@@ -20,7 +20,9 @@ session_destroy();
     <div id="banner">
       <img id="logo" src="./images/logo.png">
       <form id='login_form'>
+        <ion-icon name="person"></ion-icon>
         <input class="login_input" id='username' name='username' placeholder='Username'>
+        <ion-icon name="lock-closed"></ion-icon>
         <input class="login_input" id='password' name='password' type="password" placeholder="Password">
         <p class='feedback' id='login_feedback'></p>
         <input id='login_btn' type="submit" value="Login">
@@ -30,6 +32,8 @@ session_destroy();
     </div>
 
     <script type='module' src='./scripts/Login.js'></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     
   </body>
 </html>
