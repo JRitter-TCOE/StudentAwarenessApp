@@ -31,7 +31,7 @@ if ($child_dob == '') {
     $child_dob = NULL;
 }
 else {
-    $child_dob = "'".$child_dob."'";
+    $child_dob = $child_dob;
 }
 
 // Get DB connection
