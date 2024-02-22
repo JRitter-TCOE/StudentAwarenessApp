@@ -56,18 +56,28 @@ try {
         Status 
         )
         VALUES (
-            $school,
-            '$child_fname',
-            '$child_lname',
-            $child_dob,
-            '$inc_date',
-            '$inc_time',
-            '$agency',
-            '$reported_by',
-            '$case_num',
+            :school,
+            :child_fname,
+            :child_lname,
+            :child_dob,
+            :inc_date,
+            :inc_time,
+            :agency,
+            :reported_by,
+            :case_num,
             0
         )
     ");
+
+    $stmt->bindParam(':school', $school);
+    $stmt->bindParam(':child_fname', $child_fname);
+    $stmt->bindParam(':child_lname', $child_lname);
+    $stmt->bindParam(':child_dob', $child_dob);
+    $stmt->bindParam(':inc_date', $inc_date);
+    $stmt->bindParam(':inc_time', $inc_time);
+    $stmt->bindParam(':agency', $agency);
+    $stmt->bindParam(':reported_by', $reported_by);
+    $stmt->bindParam(':case_num', $case_num);
 
     // Execute SQL statment
     $stmt->execute();
