@@ -18,6 +18,7 @@ try {
     $row = $stmt->fetch();
     
     
+    
     date_default_timezone_set("America/Los_Angeles");
     $template = file_get_contents('./emailNotification.html');
     $template .= '<p>'. date("Y-m-d h:i:sa") .'</p>';
