@@ -34,7 +34,7 @@ try {
 
     if (count($recipients) > 1) {
         for ($i = 1; $i < count($recipients); $i++) {
-            $headers .= $recipients[$i];
+            $headers .= "Cc: " . $recipients[$i] . "\r\n";
         }
     }
 
