@@ -10,14 +10,14 @@ session_start();
 include('./db_connection.php');
 include("./logActivity.php");
 
-// Set table name
-$table = 'Login';
+
 
 // Get username from POST params
 $username = $_POST['username'];
 
 // Fetch password, role and orgID from DB
-$stmt = $db->prepare("SELECT UserPass, Role, OrgID FROM $table where UserName = '$username'");
+$stmt = $db->prepare("SELECT UserPass, Role, OrgID FROM Login where UserName = :username");
+$stmt->bindParam(':username', $username, PDO::PARAM_STR);
 $stmt->execute();
 $row = $stmt->fetch();
 

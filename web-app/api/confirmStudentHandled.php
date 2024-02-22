@@ -24,7 +24,7 @@ try {
     // Execute update of status for student report in db
     $stmt = $db->prepare("UPDATE Students SET Status = 1 WHERE StudentID = :studentID");
 
-    $stmt->bindParam(":studentID", $studentID);
+    $stmt->bindParam(":studentID", $studentID, PDO::PARAM_INT);
 
     $stmt->execute();
 

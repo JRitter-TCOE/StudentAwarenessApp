@@ -13,11 +13,12 @@ try {
     
     include("./db_connection.php");
     
-    $stmt = $db->prepare("SELECT SchoolEmail FROM Schools where SchoolID = $school_ID");
+    $stmt = $db->prepare("SELECT SchoolEmail FROM Schools where SchoolID = :school_ID");
+    $stmt->bindParam(":school_ID", $school_ID, PDO::PARAM_INT);
     $stmt->execute();
     $row = $stmt->fetch();
     
-    
+
     
     date_default_timezone_set("America/Los_Angeles");
     $template = file_get_contents('./emailNotification.html');
