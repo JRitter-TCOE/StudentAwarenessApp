@@ -74,8 +74,7 @@ try {
 
     // // Set dob to NULL if not entered for SQL syntax
 if ($child_dob == '') {
-    $stmt->bindParam(':child_dob', NULL);
-
+    $stmt->bindParam(':child_dob', "'NULL'");
 }
 else {
     $stmt->bindParam(':child_dob', $child_dob);
