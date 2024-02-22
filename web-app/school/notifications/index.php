@@ -21,12 +21,12 @@ error_reporting(E_ALL);
         include('./notificationView.php');
       }
       else {
-        echo '<img id="bg_img" src="../../images/Background_3.jpg">';
+        echo '<img id="bg_img" src="../../images/Background_3_small.jpg">';
         include("../../components/accessDenied.php");
       }
     }
     else {
-      echo '<img id="bg_img" src="../../images/Background_3.jpg">';
+      echo '<img id="bg_img" src="../../images/Background_3_small.jpg">';
       include('../../components/loginRedirect.php');
     }
     ?>

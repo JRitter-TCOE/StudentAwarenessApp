@@ -17,7 +17,7 @@ error_reporting(E_ALL);
   <body id="report">
 
     
-    <img id="bg_img" src="../images/Background_3.jpg">
+    <img id="bg_img" src="../images/Background_3_small.jpg">
 
     <div id='container'>
       <?php 
