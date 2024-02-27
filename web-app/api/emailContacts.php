@@ -13,7 +13,7 @@ try {
     
     include("./db_connection.php");
     
-    $stmt = $db->prepare("SELECT SchoolEmail FROM Schools where SchoolID = :school_ID");
+    $stmt = $db->prepare("SELECT SchoolEmail, DistrictEmail FROM Schools INNER JOIN Districts ON Schools.DistrictID = Districts.DistrictID where SchoolID = :school_ID");
     $stmt->bindParam(":school_ID", $school_ID, PDO::PARAM_INT);
     $stmt->execute();
     $row = $stmt->fetch();
@@ -24,7 +24,7 @@ try {
     $template = file_get_contents('./emailNotification.html');
     $template .= '<p>'. date("Y-m-d h:i:sa") .'</p>';
 
-    $to = $row['SchoolEmail'];
+    $to = $row['SchoolEmail'] . "," . $row["DistrictEmail"];
     $subject = "HOSWC Student Notification " . date("Y-m-d h:i:sa");
     $message = $template;
     $headers = "From: HOSWC@tcoek12.org \r\n";
