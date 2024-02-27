@@ -17,6 +17,9 @@ try {
     $stmt->bindParam(":school_ID", $school_ID, PDO::PARAM_INT);
     $stmt->execute();
     $row = $stmt->fetch();
+
+    echo "About to get";
+
     
     $recipients = array_merge(explode(", ", $row['SchoolEmail']), explode(", ", $row['DistrictEmail']));
 
