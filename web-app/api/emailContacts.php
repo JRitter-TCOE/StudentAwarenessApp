@@ -20,6 +20,8 @@ try {
     
     $recipients = array_merge(explode(", ", $row['SchoolEmail']), explode(", ", $row['DistrictEmail']));
 
+    echo "Recipients";
+
     for ($recipients as $r) {
 
         
