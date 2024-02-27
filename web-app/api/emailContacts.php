@@ -18,7 +18,7 @@ try {
     $stmt->execute();
     $row = $stmt->fetch();
     
-    $recipients = array_merge(explode(",", $row['SchoolEmail']), explode(",", $row['DistrictEmail']));
+    $recipients = array_merge(explode(", ", $row['SchoolEmail']), explode(", ", $row['DistrictEmail']));
 
     for ($recipients as $r) {
 
