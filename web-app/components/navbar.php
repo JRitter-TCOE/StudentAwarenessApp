@@ -13,7 +13,7 @@
         <a href="tel:5306232861">530-623-2861</a>
         <span>|</span>
         <ion-icon name="mail"></ion-icon>
-        <a href="mailto:hoswc@tcoek12.org">hoswc@tcoek12.org</a>
+        <a href="mailto:jritter@tcoek12.org">Technical Support</a>
         <span>|</span>
         <a id="logout" href="https://hoswc.tcoek12.org">Logout</a>
       </div>
