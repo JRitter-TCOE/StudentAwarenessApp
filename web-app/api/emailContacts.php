@@ -31,7 +31,7 @@ try {
     foreach ($recipients as $r) {
 
         
-        $to = $row['SchoolEmail'] . "," . $row["DistrictEmail"];
+        $to = $r;
         $subject = "HOSWC Student Notification " . date("Y-m-d h:i:sa");
         $message = $template;
         $headers = "From: HOSWC@tcoek12.org \r\n";
