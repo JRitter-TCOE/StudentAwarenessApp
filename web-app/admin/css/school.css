@@ -1,0 +1,95 @@
+.confirm_btn {
+  color: rgb(0, 119, 255);
+  border: none;
+  cursor: pointer;
+  background: none;
+  position: relative;
+  z-index: 1;
+}
+
+.confirm_btn ion-icon {
+  position: relative;
+  z-index: -1;
+}
+
+@media (max-width: 1000px) {
+  .dob {
+    display: none;
+  }
+}
+
+
+
+.entry:nth-child(odd) {
+  background-color: lightgrey;
+}
+
+.field {
+  flex: 1;
+  font-size: clamp(8pt, 3vw, 16pt);
+  text-align: center;
+}
+  
+.field_small {
+  flex: 1;
+  font-size: clamp(8pt, 3vw, 16pt);
+  text-align: center;
+
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 64px;
+  background-color:  #3c8500;
+  color: white;
+  text-align: center;
+}
+
+.header {
+  flex: 1;
+  font-weight: bold;
+  font-size: clamp(8pt, 3vw, 16pt);
+  text-align: center;
+
+}
+  
+#headers {
+  border-bottom: 2px solid lightgrey;
+}
+  
+.header_small {
+  flex: 1;
+  font-weight: bold;
+  font-size: clamp(8pt, 3vw, 16pt);
+  text-align: center;
+
+}
+
+#logout {
+  background-color: #00c23a;
+  border: none;
+  border-radius: 5px;
+  padding: 8px;
+}
+
+.notification_new {
+  color: red;
+}
+
+.notification_handled {
+  color: green;
+}
+
+#school {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+}
+
+#submit_btn:hover {
+  cursor: pointer;
+}
+

@@ -38,7 +38,7 @@
   <div id="tabs">
     <?php
     
-    if ($_SESSION['role'] == "District") {
+    if ($_SESSION['role'] == "District" || $_SESSION['role'] == "Admin") {
       echo "
         <div class='tab'>
           <a href='../schools'>Schools</a>

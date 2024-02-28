@@ -57,4 +57,8 @@ else if ($_SESSION['role'] == "District") {
   $_SESSION['orgName'] = $row['DistrictName'];
 }
 
+else if ($_SESSION['role'] == "Admin") {
+  $_SESSION['orgName'] = $_SESSION['username'];
+}
+
 ?>

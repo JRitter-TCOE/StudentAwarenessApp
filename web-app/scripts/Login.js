@@ -30,6 +30,9 @@ login.onsubmit = async (e) => {
     else if (res.status == "SUCCESS" && res.role == "District") {
       window.location.href = './district/notifications';
     }
+    else if (res.status == "SUCCESS" && res.role == "Admin") {
+      window.location.href = './admin/notifications';
+    }
     else {
       login_feedback.innerText = "Invalid Credentials";
     }
