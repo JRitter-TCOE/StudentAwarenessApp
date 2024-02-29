@@ -17,7 +17,7 @@ error_reporting(E_ALL);
   <body id="school">
     <?php 
     if (isset($_SESSION['username'])) {
-      if ($_SESSION['role'] == 'District') {
+      if ($_SESSION['role'] == 'Admin') {
         include('./notificationView.php');
       }
       else {
