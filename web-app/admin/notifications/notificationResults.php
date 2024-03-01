@@ -18,8 +18,12 @@ try {
     ORDER BY Status ASC, StudentID DESC
   ");
 
+  $start = 0;
+  $limit = 5;
 
-  foreach ($data as $entry) {
+  for ($i = $start; $i < $limit; $i++) {
+
+    $entry = $data[$i];
     
     $studentID = $entry['StudentID'];
     $date = $entry['IncidentDate'];
