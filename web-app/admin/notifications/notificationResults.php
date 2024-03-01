@@ -22,10 +22,16 @@ try {
 
   $entries = $stmt->fetchAll(\PDO::FETCH_ASSOC);
 
-  $start = 0;
-  $limit = 5;
+  if (isset($_POST['limit'])) {
+    $limit = $_POST['limit'];
+  }
+  else {
+    $limit = 5;
+  }
 
-  for ($i = $start; $i < $limit; $i++) {
+  
+
+  for ($i = 0; $i < $limit; $i++) {
 
     $entry = $entries[$i];
     
@@ -52,12 +58,16 @@ try {
     <p class='field'>$school</p>
     <p class='field_small'>$button</p>
     </div>";
-
-    $start++;
     
   }
 
-  echo "<div class='row'><button class='btn'>Show More</button></div>";
+  $newLimit = $limit + 5;
+
+  echo "<div class='row'>
+    <form action='./' method='POST'>
+      <button type='submit' name='limit' value=$newLimit class='btn' >$limit</button>
+    </form>
+  </div>";
 
 }
 catch (Exception $e) {
