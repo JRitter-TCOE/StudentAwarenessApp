@@ -5,7 +5,7 @@ try {
   include('../../api/db_connection.php');
   
   
-  $data = $db->query("SELECT 
+  $stmt = $db->prepare("SELECT 
     Status, 
     IncidentDate, 
     FirstName, 
@@ -18,7 +18,9 @@ try {
     ORDER BY Status ASC, StudentID DESC
   ");
 
-  $entries = array($data);
+  $stmt->execute();
+
+  $entries = $stmt->fetchAll(\PDO::FETCH_ASSOC);
 
   $start = 0;
   $limit = 5;
