@@ -158,6 +158,7 @@ nav #topBar {
   display: flex;
   align-items: center;
   min-height: 48px;
+  justify-content: center;
 }
 
 
