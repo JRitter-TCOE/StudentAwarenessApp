@@ -52,8 +52,12 @@ try {
     <p class='field'>$school</p>
     <p class='field_small'>$button</p>
     </div>";
+
+    $start++;
     
   }
+
+  echo "<button>Show More</button>"
 
 }
 catch (Exception $e) {
