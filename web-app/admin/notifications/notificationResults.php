@@ -57,7 +57,7 @@ try {
     
   }
 
-  echo "<button>Show More</button>"
+  echo "<button>Show More</button>";
 
 }
 catch (Exception $e) {
