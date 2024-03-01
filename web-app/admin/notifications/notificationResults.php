@@ -23,7 +23,7 @@ try {
   $entries = $stmt->fetchAll(\PDO::FETCH_ASSOC);
 
   if (isset($_POST['limit'])) {
-    $limit = $_POST['limit'];
+    $limit = min($_POST['limit'], count($entries));
   }
   else {
     $limit = 5;
