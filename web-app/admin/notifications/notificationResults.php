@@ -26,7 +26,7 @@ try {
     $limit = min($_POST['limit'], count($entries));
   }
   else {
-    $limit = 5;
+    $limit = 10;
   }
 
   
@@ -61,7 +61,7 @@ try {
     
   }
 
-  $newLimit = $limit + 5;
+  $newLimit = $limit + 10;
 
   if ($limit < count($entries)) {
     echo "<div class='row'>

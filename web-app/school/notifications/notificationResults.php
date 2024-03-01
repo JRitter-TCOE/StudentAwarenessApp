@@ -6,7 +6,7 @@ try {
   
   $schoolID = $_SESSION['orgID'];
   
-  $data = $db->query("SELECT 
+  $data = $db->prepare("SELECT 
     Status, 
     IncidentDate, 
     FirstName, 
@@ -20,8 +20,21 @@ try {
     ORDER BY Status ASC, StudentID DESC
   ");
 
+  $stmt->execute();
 
-  foreach ($data as $entry) {
+  $entries = $stmt->fetchAll(\PDO::FETCH_ASSOC);
+
+  if (isset($_POST['limit'])) {
+    $limit = min($_POST['limit'], count($entries));
+  }
+  else {
+    $limit = 10;
+  }
+
+
+  for ($i = 0; $i < $limit; $i++) {
+
+    $entry = $entries[$i];
     
     $studentID = $entry['StudentID'];
     $date = $entry['IncidentDate'];
@@ -47,6 +60,16 @@ try {
     <p class='field_small'>$button</p>
     </div>";
     
+  }
+
+  $newLimit = $limit + 10;
+
+  if ($limit < count($entries)) {
+    echo "<div class='row'>
+    <form action='./' method='POST'>
+    <button type='submit' name='limit' value=$newLimit class='btn' >Show More</button>
+    </form>
+    </div>";
   }
 
 }
