@@ -35,6 +35,14 @@ body {
   font-family: sans-serif;
 }
 
+.btn {
+  background-color: #00c23a;
+  border: none;
+  border-radius: 5px;
+  padding: 8px;
+  color: white;
+}
+
 .feedback {
   color: white;
   font-weight: bold;

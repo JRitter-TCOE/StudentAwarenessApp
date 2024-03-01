@@ -57,7 +57,7 @@ try {
     
   }
 
-  echo "<button>Show More</button>";
+  echo "<div class='row'><button class='btn'>Show More</button></div>";
 
 }
 catch (Exception $e) {
