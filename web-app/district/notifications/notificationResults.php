@@ -6,7 +6,7 @@ try {
   
   $districtID = $_SESSION['orgID'];
   
-  $data = $db->prepare("SELECT 
+  $stmt = $db->prepare("SELECT 
     Status, 
     IncidentDate, 
     FirstName, 
