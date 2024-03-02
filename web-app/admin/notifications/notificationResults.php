@@ -61,13 +61,11 @@ try {
 
   $newLimit = $limit + 10;
 
-  if ($limit < count($entries)) {
-    echo "<div class='row'>
-    <form action='./' method='POST'>
-    <button type='submit' name='limit' value=$newLimit class='btn' >Show More</button>
-    </form>
-    </div>";
-  }
+  echo "<div class='row'>
+  <form action='./' method='POST'>
+  <button type='submit' name='limit' value=$newLimit class='btn' >Show More</button>
+  </form>
+  </div>";
 
 }
 catch (Exception $e) {
