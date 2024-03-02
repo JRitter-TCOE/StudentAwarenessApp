@@ -5,6 +5,13 @@ try {
   include('../../api/db_connection.php');
   
   $districtID = $_SESSION['orgID'];
+
+  if (isset($_POST['limit'])) {
+    $limit = $_POST['limit'];
+  }
+  else {
+    $limit = 10;
+  }
   
   $stmt = $db->prepare("SELECT 
     Status, 
@@ -18,24 +25,16 @@ try {
     INNER JOIN Schools ON Schools.SchoolID = Students.SchoolID
     WHERE Schools.DistrictID = '$districtID'
     ORDER BY Status ASC, StudentID DESC
+    LIMIT $limit
   ");
 
   $stmt->execute();
 
-  $entries = $stmt->fetchAll(\PDO::FETCH_ASSOC);
-
-  if (isset($_POST['limit'])) {
-    $limit = min($_POST['limit'], count($entries));
-  }
-  else {
-    $limit = 10;
-  }
+  $entries = $stmt->fetchAll();
 
 
-  for ($i = 0; $i < $limit; $i++) {
+  foreach ($entries as $entry) {
 
-    $entry = $entries[$i];
-    
     $studentID = $entry['StudentID'];
     $date = $entry['IncidentDate'];
     $fname = $entry['FirstName'];
@@ -62,9 +61,11 @@ try {
     
   }
 
-  $newLimit = $limit + 10;
+  
+  if ($limit <= count($entries)) {
+    
+    $newLimit = $limit + 10;
 
-  if ($limit < count($entries)) {
     echo "<div class='row'>
     <form action='./' method='POST'>
     <button type='submit' name='limit' value=$newLimit class='btn' >Show More</button>
