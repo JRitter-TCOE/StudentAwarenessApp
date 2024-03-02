@@ -47,15 +47,18 @@ try {
       $button = "<button value=$studentID class='confirm_btn'><ion-icon value=$studentID name='checkbox-outline' size='large'></ion-icon></button>";
     }
     
-    echo "<div class='row entry'>
-    <p class='field_small'>$status</p>
-    <p class='field'>$date</p>
-    <p class='field'>$fname</p>
-    <p class='field'>$lname</p>
-    <p class='field dob'>$dob</p>
-    <p class='field'>$school</p>
-    <p class='field_small'>$button</p>
-    </div>";
+    if ($limit <= count($entries)) {
+
+      echo "<div class='row entry'>
+      <p class='field_small'>$status</p>
+      <p class='field'>$date</p>
+      <p class='field'>$fname</p>
+      <p class='field'>$lname</p>
+      <p class='field dob'>$dob</p>
+      <p class='field'>$school</p>
+      <p class='field_small'>$button</p>
+      </div>";
+    }
     
   }
 
