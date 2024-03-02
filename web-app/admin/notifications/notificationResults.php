@@ -47,28 +47,34 @@ try {
       $button = "<button value=$studentID class='confirm_btn'><ion-icon value=$studentID name='checkbox-outline' size='large'></ion-icon></button>";
     }
     
-    if ($limit <= count($entries)) {
+    
 
-      echo "<div class='row entry'>
-      <p class='field_small'>$status</p>
-      <p class='field'>$date</p>
-      <p class='field'>$fname</p>
-      <p class='field'>$lname</p>
-      <p class='field dob'>$dob</p>
-      <p class='field'>$school</p>
-      <p class='field_small'>$button</p>
-      </div>";
-    }
+    echo "<div class='row entry'>
+    <p class='field_small'>$status</p>
+    <p class='field'>$date</p>
+    <p class='field'>$fname</p>
+    <p class='field'>$lname</p>
+    <p class='field dob'>$dob</p>
+    <p class='field'>$school</p>
+    <p class='field_small'>$button</p>
+    </div>";
+    
     
   }
 
-  $newLimit = $limit + 10;
+  
 
-  echo "<div class='row'>
-  <form action='./' method='POST'>
-  <button type='submit' name='limit' value=$newLimit class='btn' >Show More</button>
-  </form>
-  </div>";
+  if ($limit <= count($entries)) {
+    
+    $newLimit = $limit + 10;
+
+    echo "<div class='row'>
+    <form action='./' method='POST'>
+    <button type='submit' name='limit' value=$newLimit class='btn' >Show More</button>
+    </form>
+    </div>";
+
+  }
 
 }
 catch (Exception $e) {
