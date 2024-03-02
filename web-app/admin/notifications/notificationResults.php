@@ -4,6 +4,13 @@ try {
 
   include('../../api/db_connection.php');
   
+
+  if (isset($_POST['limit'])) {
+    $limit = min($_POST['limit'], count($entries));
+  }
+  else {
+    $limit = 10;
+  }
   
   $stmt = $db->prepare("SELECT 
     Status, 
@@ -16,25 +23,16 @@ try {
     FROM Students
     INNER JOIN Schools ON Schools.SchoolID = Students.SchoolID
     ORDER BY Status ASC, StudentID DESC
+    LIMIT $limit
   ");
 
   $stmt->execute();
 
-  $entries = $stmt->fetchAll(\PDO::FETCH_ASSOC);
-
-  if (isset($_POST['limit'])) {
-    $limit = min($_POST['limit'], count($entries));
-  }
-  else {
-    $limit = 10;
-  }
+  $entries = $stmt->fetchAll();
 
   
+  foreach ($entries as $entry) {
 
-  for ($i = 0; $i < $limit; $i++) {
-
-    $entry = $entries[$i];
-    
     $studentID = $entry['StudentID'];
     $date = $entry['IncidentDate'];
     $fname = $entry['FirstName'];
