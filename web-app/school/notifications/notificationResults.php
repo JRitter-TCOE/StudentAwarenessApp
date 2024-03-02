@@ -35,7 +35,7 @@ try {
   
 
 
-  for ($entries as $entry) {
+  foreach ($entries as $entry) {
 
     $studentID = $entry['StudentID'];
     $date = $entry['IncidentDate'];
