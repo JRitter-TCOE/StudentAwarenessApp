@@ -23,7 +23,7 @@ try {
     SchoolName
     FROM Students
     INNER JOIN Schools ON Schools.SchoolID = Students.SchoolID
-    WHERE Schools.DistrictID = '$districtID'
+    WHERE Schools.DistrictID = $districtID
     ORDER BY Status ASC, StudentID DESC
     LIMIT $limit
   ");
