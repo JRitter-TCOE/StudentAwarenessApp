@@ -34,6 +34,6 @@ error_reporting(E_ALL);
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <script type="module" src="../../scripts/Nav_Menu_Btn.js"></script>
-    <script type="module" src="../scripts/ConfirmStudentHandled.js"></script>
+    <script type="module" src="../../scripts/ConfirmStudentHandled.js"></script>
   </body>
 </html>
