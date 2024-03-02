@@ -6,7 +6,7 @@ try {
   
 
   if (isset($_POST['limit'])) {
-    $limit = min($_POST['limit'], count($entries));
+    $limit = $_POST['limit'];
   }
   else {
     $limit = 10;
