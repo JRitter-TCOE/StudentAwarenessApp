@@ -18,7 +18,7 @@ error_reporting(E_ALL);
     <?php 
     if (isset($_SESSION['username'])) {
       if ($_SESSION['role'] == 'School') {
-        include('./notificationView.php');
+        include('../..components/notificationView.php');
       }
       else {
         echo '<img id="bg_img" src="../../images/Background_3_small.jpg">';
