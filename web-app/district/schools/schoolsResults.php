@@ -6,29 +6,8 @@ try {
   
   $districtID = $_SESSION['orgID'];
   
-  $data = $db->query("SELECT 
-    SchoolName,
-    SchoolContact,
-    SchoolEmail
-    FROM Schools
-    WHERE Schools.DistrictID = '$districtID'
-  ");
-
-
-  foreach ($data as $entry) {
-    
-    $schoolName = $entry['SchoolName'];
-    $contactName = $entry['SchoolContact'];
-    $contactEmail = $entry['SchoolEmail'];
-
-    
-    echo "<div class='row entry'>
-    <p class='field'>$schoolName</p>
-    <p class='field'>$contactName</p>
-    <p class='field'>$contactEmail</p>
-    </div>";
-    
-  }
+  include('../../api/fetchDistrictSchools.php');
+  include('../../components/displaySchools.php');
 
 }
 catch (Exception $e) {
