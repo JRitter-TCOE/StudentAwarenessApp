@@ -5,5 +5,5 @@
     <p class="header">Last</p>
     <p class="header dob">DOB</p>
     <p class="header">School</p>
-    <p class="header_small"></p>
+    <p class="header_small">Handled By</p>
   </div>
