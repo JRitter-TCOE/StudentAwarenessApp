@@ -9,7 +9,7 @@ foreach ($entries as $entry) {
     $dob = $entry['DateOfBirth'];
     $school = $entry['SchoolName'];
     $status = '<ion-icon class="notification_handled" name="checkmark-circle" size="large" ></ion-icon>';
-    $button = '';
+    $button = $entry['Handled_by'];
 
     if ($entry['Status'] == 0) {
       $status = '<ion-icon class="notification_new" name="notifications" size="large"></ion-icon>';
