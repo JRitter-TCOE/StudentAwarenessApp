@@ -7,8 +7,8 @@ const login_feedback = document.getElementById('login_feedback');
 const show_pass_btn = document.getElementById('show_pass_btn');
 
 
-show_pass_btn.onclick = () => {
-  console.log('clicked');
+show_pass_btn.onclick = (e) => {
+  console.log('clicked', show_pass_btn.type);
   if (show_pass_btn.type == "password") {
     show_pass_btn.type = "text";
   }
