@@ -27,6 +27,7 @@ session_destroy();
         <div class='field'>
           <ion-icon name="lock-closed" size="large"></ion-icon>
           <input class="login_input" id='password' name='password' type="password" placeholder="Password">
+          <ion-icon name="eye-outline"></ion-icon>
         </div>
         <p class='feedback' id='login_feedback'></p>
         <input id='login_btn' type="submit" value="Login">
