@@ -8,6 +8,7 @@ const show_pass_btn = document.getElementById('show_pass_btn');
 
 
 show_pass_btn.onclick = () => {
+  console.log('clicked');
   if (show_pass_btn.type == "password") {
     show_pass_btn.type = "text";
   }
