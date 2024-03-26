@@ -4,6 +4,17 @@ const login = document.getElementById('login_form');
 const user = document.getElementById('username');
 const pass = document.getElementById('password');
 const login_feedback = document.getElementById('login_feedback');
+const show_pass_btn = document.getElementById('show_pass_btn');
+
+
+show_pass_btn.onclick = () => {
+  if (show_pass_btn.type == "password") {
+    show_pass_btn.type = "text";
+  }
+  else {
+    show_pass_btn.type = "password";
+  }
+};
 
 login.onsubmit = async (e) => {
   e.preventDefault();

@@ -73,7 +73,9 @@ ion-icon {
   border-radius: 15px;
 }
 
-
+#show_pass_btn {
+  cursor: pointer;
+}
 
 #tcoe_logo {
   width: 256px;
