@@ -56,6 +56,7 @@ ion-icon {
   border: none;
   color: white;
   margin-top: 32px;
+  flex: 1;
 }
 
 .login_input::placeholder {
@@ -71,6 +72,8 @@ ion-icon {
   height: 256px;
   border-radius: 15px;
 }
+
+
 
 #tcoe_logo {
   width: 256px;
