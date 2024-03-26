@@ -9,9 +9,11 @@ const show_pass_btn = document.getElementById('show_pass_btn');
 
 show_pass_btn.onclick = (e) => {
   if (pass.getAttribute('type') == "password") {
+    show_pass_btn.name = "eye-off-outline";
     pass.type = "text";
   }
   else {
+    show_pass_btn.name = "eye-outline";
     pass.type = "password";
   }
 };
