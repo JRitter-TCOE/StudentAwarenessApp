@@ -8,7 +8,7 @@ include('../api/db_connection.php');
 
   $table = "Schools";
 
-  foreach($db->query("SELECT SchoolID, SchoolName FROM $table") as $row) {
+  foreach($db->query("SELECT SchoolID, SchoolName FROM $table ORDER BY SchoolName") as $row) {
     $value = $row["SchoolID"];
     $name = $row["SchoolName"];
 
